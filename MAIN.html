@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Guia de Classes Shadowdark (A5)</title>
@@ -35,7 +36,7 @@
             margin-bottom: 5px;
             page-break-after: avoid;
         }
-        
+
         h3 {
             font-size: 10pt;
             font-weight: bold;
@@ -87,10 +88,14 @@
             margin: 5px 0;
             padding-left: 15px;
         }
-        
-        li { margin-bottom: 3px; }
 
-        strong { font-weight: 700; }
+        li {
+            margin-bottom: 3px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
 
         /* Tabelas */
         table {
@@ -101,7 +106,8 @@
             background: #fff;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #999;
             padding: 2px 4px;
             text-align: left;
@@ -115,7 +121,9 @@
             font-weight: normal;
         }
 
-        .center { text-align: center; }
+        .center {
+            text-align: center;
+        }
 
         /* Seção de Magias e Extras */
         .appendix {
@@ -123,13 +131,13 @@
             border: 1px solid #ccc;
             padding: 8px;
         }
-        
+
         .spell-list {
             column-count: 2;
             column-gap: 15px;
             font-size: 8pt;
         }
-        
+
         .spell-list p {
             margin: 0 0 6px 0;
             orphans: 2;
@@ -137,12 +145,21 @@
         }
 
         @media print {
-            .class-block { page-break-inside: auto; }
-            h3 { page-break-after: avoid; }
-            table { page-break-inside: avoid; }
+            .class-block {
+                page-break-inside: auto;
+            }
+
+            h3 {
+                page-break-after: avoid;
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <h1>Guia de Classes & Regras</h1>
@@ -159,26 +176,76 @@
             <li><strong>Determinação (Grit):</strong> Escolha FOR ou DES. Vantagem em testes desse atributo.</li>
             <li><strong>Cargueiro:</strong> Adiciona mod. CON aos espaços de carga.</li>
         </ul>
-        
+
         <!-- Tabela de Títulos -->
         <table>
-            <tr><th colspan="4">Títulos de Guerreiro</th></tr>
-            <tr><th style="background:#ccc; color:black; width:15%">Nível</th><th style="background:#ccc; color:black">Leal</th><th style="background:#ccc; color:black">Caótico</th><th style="background:#ccc; color:black">Neutro</th></tr>
-            <tr><td class="center">1-2</td><td>Escudeiro</td><td>Biltre</td><td>Guerreiro</td></tr>
-            <tr><td class="center">3-4</td><td>Cavaleiro</td><td>Bandido</td><td>Bárbaro</td></tr>
-            <tr><td class="center">5-6</td><td>Cavaleiro Real</td><td>Matador</td><td>Furioso</td></tr>
-            <tr><td class="center">7-8</td><td>Thane</td><td>Saqueador</td><td>Chefe de Guerra</td></tr>
-            <tr><td class="center">9-10</td><td>Lorde</td><td>Senhor da Guerra</td><td>Caudilho</td></tr>
+            <tr>
+                <th colspan="4">Títulos de Guerreiro</th>
+            </tr>
+            <tr>
+                <th style="background:#ccc; color:black; width:15%">Nível</th>
+                <th style="background:#ccc; color:black">Leal</th>
+                <th style="background:#ccc; color:black">Caótico</th>
+                <th style="background:#ccc; color:black">Neutro</th>
+            </tr>
+            <tr>
+                <td class="center">1-2</td>
+                <td>Escudeiro</td>
+                <td>Biltre</td>
+                <td>Guerreiro</td>
+            </tr>
+            <tr>
+                <td class="center">3-4</td>
+                <td>Cavaleiro</td>
+                <td>Bandido</td>
+                <td>Bárbaro</td>
+            </tr>
+            <tr>
+                <td class="center">5-6</td>
+                <td>Cavaleiro Real</td>
+                <td>Matador</td>
+                <td>Furioso</td>
+            </tr>
+            <tr>
+                <td class="center">7-8</td>
+                <td>Thane</td>
+                <td>Saqueador</td>
+                <td>Chefe de Guerra</td>
+            </tr>
+            <tr>
+                <td class="center">9-10</td>
+                <td>Lorde</td>
+                <td>Senhor da Guerra</td>
+                <td>Caudilho</td>
+            </tr>
         </table>
 
         <!-- Talentos -->
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Ganha Mestria com Arma em um tipo adicional.</td></tr>
-            <tr><td class="center">3-6</td><td>+1 em ataques corpo a corpo e à distância.</td></tr>
-            <tr><td class="center">7-9</td><td>+2 no atributo Força, Destreza ou Constituição.</td></tr>
-            <tr><td class="center">10-11</td><td>Escolha um tipo de armadura. +1 CA com ela.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Ganha Mestria com Arma em um tipo adicional.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+1 em ataques corpo a corpo e à distância.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+2 no atributo Força, Destreza ou Constituição.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Escolha um tipo de armadura. +1 CA com ela.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -208,26 +275,72 @@
         </div>
         <div class="stats-row">Armas: Clava, Besta, Adaga, Arcos, Espadas Curtas • Armadura: Couro • PV: 1d4</div>
         <ul>
-            <li><strong>Ataque Furtivo:</strong> +1 dado de dano se o inimigo não o vê. (+dado extra nv 2, 4, 6...).</li>
+            <li><strong>Ataque Furtivo:</strong> +1 dado de dano se o inimigo não o vê. (+dado extra nv 2, 4, 6...).
+            </li>
             <li><strong>Ladinagem:</strong> Vantagem (DES) p/ furtividade, bater carteira, trancas e armadilhas.</li>
         </ul>
 
         <table>
-            <tr><th colspan="4">Títulos de Ladrão</th></tr>
-            <tr><td class="center">1-2</td><td>Salteador</td><td>Capanga</td><td>Ladrão</td></tr>
-            <tr><td class="center">3-4</td><td>Arrombador</td><td>Degolador</td><td>Fora da Lei</td></tr>
-            <tr><td class="center">5-6</td><td>Trapaceiro</td><td>Sombra</td><td>Ladino</td></tr>
-            <tr><td class="center">7-8</td><td>Subchefe</td><td>Assassino</td><td>Renegado</td></tr>
-            <tr><td class="center">9-10</td><td>Chefe da Guilda</td><td>Espectro</td><td>Rei Bandido</td></tr>
+            <tr>
+                <th colspan="4">Títulos de Ladrão</th>
+            </tr>
+            <tr>
+                <td class="center">1-2</td>
+                <td>Salteador</td>
+                <td>Capanga</td>
+                <td>Ladrão</td>
+            </tr>
+            <tr>
+                <td class="center">3-4</td>
+                <td>Arrombador</td>
+                <td>Degolador</td>
+                <td>Fora da Lei</td>
+            </tr>
+            <tr>
+                <td class="center">5-6</td>
+                <td>Trapaceiro</td>
+                <td>Sombra</td>
+                <td>Ladino</td>
+            </tr>
+            <tr>
+                <td class="center">7-8</td>
+                <td>Subchefe</td>
+                <td>Assassino</td>
+                <td>Renegado</td>
+            </tr>
+            <tr>
+                <td class="center">9-10</td>
+                <td>Chefe da Guilda</td>
+                <td>Espectro</td>
+                <td>Rei Bandido</td>
+            </tr>
         </table>
-        
+
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Vantagem em Iniciativa.</td></tr>
-            <tr><td class="center">3-6</td><td>Ataque Furtivo causa +1 dado de dano.</td></tr>
-            <tr><td class="center">7-9</td><td>+2 no atributo Força, Destreza ou Carisma.</td></tr>
-            <tr><td class="center">10-11</td><td>+1 em ataques corpo a corpo e à distância.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Vantagem em Iniciativa.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>Ataque Furtivo causa +1 dado de dano.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+2 no atributo Força, Destreza ou Carisma.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>+1 em ataques corpo a corpo e à distância.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -235,7 +348,10 @@
     <div class="class-block">
         <div class="class-title">5. Clérigo (Batalhador)</div>
         <div class="flavor-text">
-            Guerreiro divino com habilidades em combate e exorcismo, protege aliados das forças do mal. Com o atributo secundário na força ou destreza e proficiência em todas as armaduras e escudos você é um combatente capaz. Além de conjurar magias divinas, é temível numa luta e pode manter o grupo vivo por mais tempo. Você deve escolher uma deidade entre as disponíveis e seguir os seus preceitos e alinhamentos.
+            Guerreiro divino com habilidades em combate e exorcismo, protege aliados das forças do mal. Com o atributo
+            secundário na força ou destreza e proficiência em todas as armaduras e escudos você é um combatente capaz.
+            Além de conjurar magias divinas, é temível numa luta e pode manter o grupo vivo por mais tempo. Você deve
+            escolher uma deidade entre as disponíveis e seguir os seus preceitos e alinhamentos.
         </div>
         <div class="stats-row">Armas: Clava, Besta, Adaga, Maça, Espada Longa, Martelo • Armadura: Todas • PV: 1d6</div>
         <ul>
@@ -244,22 +360,67 @@
             <li><strong>Conjuração:</strong> Magias de Clérigo (Ver Apêndice).</li>
         </ul>
 
-         <table>
-            <tr><th colspan="4">Títulos de Clérigo</th></tr>
-            <tr><td class="center">1-2</td><td>Acólito</td><td>Iniciado</td><td>Buscador</td></tr>
-            <tr><td class="center">3-4</td><td>Cruzado</td><td>Fanático</td><td>Invocador</td></tr>
-            <tr><td class="center">5-6</td><td>Templário</td><td>Cultista</td><td>Harúspice</td></tr>
-            <tr><td class="center">7-8</td><td>Campeão</td><td>Flagelo</td><td>Místico</td></tr>
-            <tr><td class="center">9-10</td><td>Paladino</td><td>Cavaleiro do Caos</td><td>Oráculo</td></tr>
+        <table>
+            <tr>
+                <th colspan="4">Títulos de Clérigo</th>
+            </tr>
+            <tr>
+                <td class="center">1-2</td>
+                <td>Acólito</td>
+                <td>Iniciado</td>
+                <td>Buscador</td>
+            </tr>
+            <tr>
+                <td class="center">3-4</td>
+                <td>Cruzado</td>
+                <td>Fanático</td>
+                <td>Invocador</td>
+            </tr>
+            <tr>
+                <td class="center">5-6</td>
+                <td>Templário</td>
+                <td>Cultista</td>
+                <td>Harúspice</td>
+            </tr>
+            <tr>
+                <td class="center">7-8</td>
+                <td>Campeão</td>
+                <td>Flagelo</td>
+                <td>Místico</td>
+            </tr>
+            <tr>
+                <td class="center">9-10</td>
+                <td>Paladino</td>
+                <td>Cavaleiro do Caos</td>
+                <td>Oráculo</td>
+            </tr>
         </table>
 
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Vantagem ao lançar uma magia conhecida (escolha uma).</td></tr>
-            <tr><td class="center">3-6</td><td>+1 em ataques corpo a corpo ou à distância.</td></tr>
-            <tr><td class="center">7-9</td><td>+1 em testes de conjuração de clérigo.</td></tr>
-            <tr><td class="center">10-11</td><td>+2 no atributo Força ou Sabedoria.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Vantagem ao lançar uma magia conhecida (escolha uma).</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+1 em ataques corpo a corpo ou à distância.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+1 em testes de conjuração de clérigo.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>+2 no atributo Força ou Sabedoria.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -267,7 +428,10 @@
     <div class="class-block">
         <div class="class-title">6. Clérigo (Padre)</div>
         <div class="flavor-text">
-            Suporte e cura, especialista em manter o grupo inteiro e evitar mortos-vivos, duro na queda. Com o atributo secundário na constituição, seu objetivo é sobreviver e manter todo mundo em pé. Excelente ao lidar com mortos vivos, suas capacidades de apoio podem ser ainda mais elaboradas dependendo da sua inteligência ou carisma para lidar com os perigos A deidade escolhida geralmente é da vida, guerra ou paz.
+            Suporte e cura, especialista em manter o grupo inteiro e evitar mortos-vivos, duro na queda. Com o atributo
+            secundário na constituição, seu objetivo é sobreviver e manter todo mundo em pé. Excelente ao lidar com
+            mortos vivos, suas capacidades de apoio podem ser ainda mais elaboradas dependendo da sua inteligência ou
+            carisma para lidar com os perigos A deidade escolhida geralmente é da vida, guerra ou paz.
         </div>
         <div class="stats-row">Regras: Usa estatísticas e talentos do Clérigo (Foco em Sobrevivência/Cura).</div>
     </div>
@@ -276,7 +440,11 @@
     <div class="class-block">
         <div class="class-title">7. Mago</div>
         <div class="flavor-text">
-            Conjurador arcano, dominante das artes místicas, cria itens mágicos. Não importa se você aprendeu numa universidade de magia secreta, se foi escolhido por uma seita arcana ou se simplesmente nasceu desse jeito, você tem poderes que lhe permitem dobrar a realidade. Limitados apenas pelas suas próprias habilidades, os magos podem ser uma fonte ilimitada de dano, controle e suporte. Evite dano e mantenha sempre um punhal consigo caso cheguem perto demais de você.
+            Conjurador arcano, dominante das artes místicas, cria itens mágicos. Não importa se você aprendeu numa
+            universidade de magia secreta, se foi escolhido por uma seita arcana ou se simplesmente nasceu desse jeito,
+            você tem poderes que lhe permitem dobrar a realidade. Limitados apenas pelas suas próprias habilidades, os
+            magos podem ser uma fonte ilimitada de dano, controle e suporte. Evite dano e mantenha sempre um punhal
+            consigo caso cheguem perto demais de você.
         </div>
         <div class="stats-row">Armas: Adaga, Cajado • Armadura: Nenhuma • PV: 1d4</div>
         <ul>
@@ -285,21 +453,66 @@
         </ul>
 
         <table>
-            <tr><th colspan="4">Títulos de Mago</th></tr>
-            <tr><td class="center">1-2</td><td>Aprendiz</td><td>Adepto</td><td>Xamã</td></tr>
-            <tr><td class="center">3-4</td><td>Conjurador</td><td>Canalizador</td><td>Vidente</td></tr>
-            <tr><td class="center">5-6</td><td>Arcanista</td><td>Bruxo</td><td>Guardião</td></tr>
-            <tr><td class="center">7-8</td><td>Mago</td><td>Diabolista</td><td>Sábio</td></tr>
-            <tr><td class="center">9-10</td><td>Arquimago</td><td>Feiticeiro</td><td>Druida</td></tr>
+            <tr>
+                <th colspan="4">Títulos de Mago</th>
+            </tr>
+            <tr>
+                <td class="center">1-2</td>
+                <td>Aprendiz</td>
+                <td>Adepto</td>
+                <td>Xamã</td>
+            </tr>
+            <tr>
+                <td class="center">3-4</td>
+                <td>Conjurador</td>
+                <td>Canalizador</td>
+                <td>Vidente</td>
+            </tr>
+            <tr>
+                <td class="center">5-6</td>
+                <td>Arcanista</td>
+                <td>Bruxo</td>
+                <td>Guardião</td>
+            </tr>
+            <tr>
+                <td class="center">7-8</td>
+                <td>Mago</td>
+                <td>Diabolista</td>
+                <td>Sábio</td>
+            </tr>
+            <tr>
+                <td class="center">9-10</td>
+                <td>Arquimago</td>
+                <td>Feiticeiro</td>
+                <td>Druida</td>
+            </tr>
         </table>
 
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Criar item mágico (1/dia) OU Ganhe vantagem em 1 magia.</td></tr>
-            <tr><td class="center">3-6</td><td>+2 no atributo Inteligência OU +1 em conjuração.</td></tr>
-            <tr><td class="center">7-9</td><td>Aprenda uma magia arcana adicional de qualquer tier.</td></tr>
-            <tr><td class="center">10-11</td><td>+2 no atributo Destreza ou Inteligência.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Criar item mágico (1/dia) OU Ganhe vantagem em 1 magia.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+2 no atributo Inteligência OU +1 em conjuração.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>Aprenda uma magia arcana adicional de qualquer tier.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>+2 no atributo Destreza ou Inteligência.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -307,16 +520,23 @@
     <div class="class-block">
         <div class="class-title">8. Druida</div>
         <div class="flavor-text">
-            Conjurador elementar, magias da natureza e metamorfose. Um mago que necessariamente precisa ser neutro, tem poderes sobre os elementos, as formas das plantas e os animais. Suas capacidades se estendem aos conhecimentos arcanos e da natureza sendo muito úteis em qualquer floresta ou selva. Além disso, pode ser temível a curto alcance sempre podendo contar com seu cajado místico.
+            Conjurador elementar, magias da natureza e metamorfose. Um mago que necessariamente precisa ser neutro, tem
+            poderes sobre os elementos, as formas das plantas e os animais. Suas capacidades se estendem aos
+            conhecimentos arcanos e da natureza sendo muito úteis em qualquer floresta ou selva. Além disso, pode ser
+            temível a curto alcance sempre podendo contar com seu cajado místico.
         </div>
-        <div class="stats-row">Regras: Usa estatísticas do Mago. <strong>Ver Apêndice: Magias de Natureza.</strong></div>
+        <div class="stats-row">Regras: Usa estatísticas do Mago (Roleplay: foco em magias da natureza). <strong>Ver
+                Apêndice: Magias de Druida.</strong></div>
     </div>
 
     <!-- 9. SPELL DANCER -->
     <div class="class-block">
         <div class="class-title">9. Spell Dancer</div>
         <div class="flavor-text">
-            Conjurador que mistura habilidades marciais misticas, feitiços e agilidade. Com uma arma de finesse e muita agilidade, esse conjurador procura confundir os inimigos com ilusões e feitiços até finalizá-los com um delicado corte na garganta. Esse tipo de mago é o mais ávido na busca de relíquias e itens mágicos, dizem que muitos deles o fazem para copiá-los mas a verdade sinistra é que muitos nunca mais são vistos.
+            Conjurador que mistura habilidades marciais misticas, feitiços e agilidade. Com uma arma de finesse e muita
+            agilidade, esse conjurador procura confundir os inimigos com ilusões e feitiços até finalizá-los com um
+            delicado corte na garganta. Esse tipo de mago é o mais ávido na busca de relíquias e itens mágicos, dizem
+            que muitos deles o fazem para copiá-los mas a verdade sinistra é que muitos nunca mais são vistos.
         </div>
         <div class="stats-row">Regras: Mago (foco em magias de toque/self e atributos físicos).</div>
     </div>
@@ -325,30 +545,81 @@
     <div class="class-block">
         <div class="class-title">10. Warlock (Bruxo)</div>
         <div class="flavor-text">
-            Guerreiro místico apadrinhado por uma entidade extra-planar. Algo aconteceu com você em algum momento da sua vida que fez com que uma entidade extra-planar onipoderosa se afeiçoar por sua pessoa e essa força lhe dá poderes, à custa de favores que muitas vezes você não compreende. Seja como um espadachim blindado pelo sobrenatural ou um enganador guiado por uma força sinistra, seus poderes lhe dão vantagens em várias situações, dependendo das suas escolhas. Capaz de um número seleto de armas, armaduras médias e escudos, você é um combatente excelente.
+            Guerreiro místico apadrinhado por uma entidade extra-planar. Algo aconteceu com você em algum momento da sua
+            vida que fez com que uma entidade extra-planar onipoderosa se afeiçoar por sua pessoa e essa força lhe dá
+            poderes, à custa de favores que muitas vezes você não compreende. Seja como um espadachim blindado pelo
+            sobrenatural ou um enganador guiado por uma força sinistra, seus poderes lhe dão vantagens em várias
+            situações, dependendo das suas escolhas. Capaz de um número seleto de armas, armaduras médias e escudos,
+            você é um combatente excelente.
         </div>
         <div class="stats-row">Armas: Clava, Besta, Adaga, Maça, Espada • Armadura: Couro, Malha, Escudo • PV: 1d6</div>
         <ul>
             <li><strong>Patrono:</strong> Fonte de poder. Inicia com uma <em>Dádiva do Patrono</em>.</li>
-            <li><strong>Dádiva:</strong> Sempre que ganha um talento, pode rolar na tabela de Patrono (ver Apêndice) ao invés da tabela de classe.</li>
+            <li><strong>Dádiva:</strong> Sempre que ganha um talento, pode rolar na tabela de Patrono (ver Apêndice) ao
+                invés da tabela de classe.</li>
         </ul>
-        
+
         <table>
-            <tr><th colspan="4">Títulos de Bruxo</th></tr>
-            <tr><td class="center">1-2</td><td>Favorecido</td><td>Marcado</td><td>Escolhido</td></tr>
-            <tr><td class="center">3-4</td><td>Arauto</td><td>Fanático</td><td>Canalizador</td></tr>
-            <tr><td class="center">5-6</td><td>Eminente</td><td>Ocultista</td><td>Profetizado</td></tr>
-            <tr><td class="center">7-8</td><td>Exaltado</td><td>Campeão</td><td>Transcendente</td></tr>
-            <tr><td class="center">9-10</td><td>Encarnação</td><td>Precursor</td><td>Avatar</td></tr>
+            <tr>
+                <th colspan="4">Títulos de Bruxo</th>
+            </tr>
+            <tr>
+                <td class="center">1-2</td>
+                <td>Favorecido</td>
+                <td>Marcado</td>
+                <td>Escolhido</td>
+            </tr>
+            <tr>
+                <td class="center">3-4</td>
+                <td>Arauto</td>
+                <td>Fanático</td>
+                <td>Canalizador</td>
+            </tr>
+            <tr>
+                <td class="center">5-6</td>
+                <td>Eminente</td>
+                <td>Ocultista</td>
+                <td>Profetizado</td>
+            </tr>
+            <tr>
+                <td class="center">7-8</td>
+                <td>Exaltado</td>
+                <td>Campeão</td>
+                <td>Transcendente</td>
+            </tr>
+            <tr>
+                <td class="center">9-10</td>
+                <td>Encarnação</td>
+                <td>Precursor</td>
+                <td>Avatar</td>
+            </tr>
         </table>
 
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Role uma Dádiva do Patrono (dom inexplicável).</td></tr>
-            <tr><td class="center">3-6</td><td>Adicione +1 ponto em dois atributos diferentes.</td></tr>
-            <tr><td class="center">7-9</td><td>+1 em ataques corpo a corpo ou à distância.</td></tr>
-            <tr><td class="center">10-11</td><td>Role duas Dádivas e escolha uma para manter.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Role uma Dádiva do Patrono (dom inexplicável).</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>Adicione +1 ponto em dois atributos diferentes.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+1 em ataques corpo a corpo ou à distância.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Role duas Dádivas e escolha uma para manter.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -356,7 +627,11 @@
     <div class="class-block">
         <div class="class-title">11. Gladiador</div>
         <div class="flavor-text">
-            Especialista em combate, táticas de grupo. mitigar dano e sobrepujar a morte certa. Seja nos becos do submundo, na grade de alguma arena sinistra ou no glorioso coliseu, você aprendeu a lutar e sobreviver, melhor que isso, sabe fazer isso de forma espetacular. Podendo emular qualquer set de armas do gladiador clássico e sendo capaz de resistir a danos terríveis, muitas vezes vão achar que você está morto quando na verdade está pronto para levantar de novo e ouvir os gritos da torcida.
+            Especialista em combate, táticas de grupo. mitigar dano e sobrepujar a morte certa. Seja nos becos do
+            submundo, na grade de alguma arena sinistra ou no glorioso coliseu, você aprendeu a lutar e sobreviver,
+            melhor que isso, sabe fazer isso de forma espetacular. Podendo emular qualquer set de armas do gladiador
+            clássico e sendo capaz de resistir a danos terríveis, muitas vezes vão achar que você está morto quando na
+            verdade está pronto para levantar de novo e ouvir os gritos da torcida.
         </div>
         <div class="stats-row">Armas: Todas • Armadura: Couro, Escudos • PV: 1d8</div>
         <ul>
@@ -365,12 +640,30 @@
             <li><strong>Floreio (3/dia):</strong> Recupera 1d6 PV ao acertar ataque corpo a corpo.</li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>1/dia, ignore todo o dano e efeitos de um ataque.</td></tr>
-            <tr><td class="center">3-6</td><td>Você ganha +1 de dano com armas corpo a corpo.</td></tr>
-            <tr><td class="center">7-9</td><td>+2 no atributo Força ou Constituição, ou +1 em ataques.</td></tr>
-            <tr><td class="center">10-11</td><td>Aumente o PV que você ganha com *Floreio* em +1d6.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>1/dia, ignore todo o dano e efeitos de um ataque.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>Você ganha +1 de dano com armas corpo a corpo.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+2 no atributo Força ou Constituição, ou +1 em ataques.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Aumente o PV que você ganha com *Floreio* em +1d6.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -378,7 +671,11 @@
     <div class="class-block">
         <div class="class-title">12. Ninja</div>
         <div class="flavor-text">
-            Poderes e armas das sombras, teleporte, técnicas especiais únicas. Sua existência é um clichê, você foi treinado desde a mais tenra infância pelo seu clã, família ou máfia (muitas vezes tudo isso junto) em ser uma sombra, o dominante do subterfúgio, aquele que caminha no jardim. Mesmo com todo o treinamento e as armas clássicas cada ninja carrega consigo um conjunto de técnicas especiais que só ele domina e desenvolve com o tempo, tornando cada um único e mortal.
+            Poderes e armas das sombras, teleporte, técnicas especiais únicas. Sua existência é um clichê, você foi
+            treinado desde a mais tenra infância pelo seu clã, família ou máfia (muitas vezes tudo isso junto) em ser
+            uma sombra, o dominante do subterfúgio, aquele que caminha no jardim. Mesmo com todo o treinamento e as
+            armas clássicas cada ninja carrega consigo um conjunto de técnicas especiais que só ele domina e desenvolve
+            com o tempo, tornando cada um único e mortal.
         </div>
         <div class="stats-row">Armas: Zarabatana, Boleadeira, Adaga, Corrente, Cimitarra, Shuriken • PV: 1d6</div>
         <ul>
@@ -387,29 +684,85 @@
             <li><strong>Lótus Negra:</strong> Inicia com um talento da tabela Lótus Negra.</li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Você é treinado no uso de venenos.</td></tr>
-            <tr><td class="center">3-6</td><td>Role um talento adicional na tabela de Talentos da Lótus Negra.</td></tr>
-            <tr><td class="center">7-9</td><td>+2 no atributo Força ou Destreza, ou +1 em ataques.</td></tr>
-            <tr><td class="center">10-11</td><td>Ganhe um uso adicional do seu talento *Passo de Fumaça*.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Você é treinado no uso de venenos.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>Role um talento adicional na tabela de Talentos da Lótus Negra.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+2 no atributo Força ou Destreza, ou +1 em ataques.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Ganhe um uso adicional do seu talento *Passo de Fumaça*.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
-        
+
         <!-- Tabela da Lótus Negra -->
         <table>
-            <tr><th colspan="2">Talentos da Lótus Negra (d12)</th></tr>
-            <tr><td class="center">1</td><td><strong>Assassino Mortal:</strong> Dano triplo com Assassinato (em vez de dobro).</td></tr>
-            <tr><td class="center">2</td><td><strong>Imunidade:</strong> Você é imune a venenos e toxinas.</td></tr>
-            <tr><td class="center">3</td><td><strong>Visão Sombria:</strong> Você pode ver em escuridão mágica.</td></tr>
-            <tr><td class="center">4</td><td><strong>Aranha:</strong> Você pode escalar superfícies lisas ou tetos sem testes.</td></tr>
-            <tr><td class="center">5</td><td><strong>Desaparecer:</strong> Conjure <em>Invisibilidade</em> (self) 1/dia.</td></tr>
-            <tr><td class="center">6</td><td><strong>Silêncio:</strong> Conjure <em>Silêncio</em> 1/dia.</td></tr>
-            <tr><td class="center">7</td><td><strong>Escuridão:</strong> Conjure <em>Escuridão</em> 1/dia.</td></tr>
-            <tr><td class="center">8</td><td><strong>Sem Rastros:</strong> Conjure <em>Passos sem Pegadas</em> 1/dia.</td></tr>
-            <tr><td class="center">9</td><td><strong>Reflexos:</strong> Você tem vantagem em testes de Iniciativa.</td></tr>
-            <tr><td class="center">10</td><td><strong>Velocidade:</strong> Seu movimento aumenta em +1 distância "perto".</td></tr>
-            <tr><td class="center">11</td><td><strong>Salto:</strong> Você pode saltar o dobro da distância normal.</td></tr>
-            <tr><td class="center">12</td><td><strong>Defesa:</strong> Você ganha +1 na CA se estiver empunhando duas armas.</td></tr>
+            <tr>
+                <th colspan="2">Talentos da Lótus Negra (d12)</th>
+            </tr>
+            <tr>
+                <td class="center">1</td>
+                <td><strong>Assassino Mortal:</strong> Dano triplo com Assassinato (em vez de dobro).</td>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td><strong>Imunidade:</strong> Você é imune a venenos e toxinas.</td>
+            </tr>
+            <tr>
+                <td class="center">3</td>
+                <td><strong>Visão Sombria:</strong> Você pode ver em escuridão mágica.</td>
+            </tr>
+            <tr>
+                <td class="center">4</td>
+                <td><strong>Aranha:</strong> Você pode escalar superfícies lisas ou tetos sem testes.</td>
+            </tr>
+            <tr>
+                <td class="center">5</td>
+                <td><strong>Desaparecer:</strong> Conjure <em>Invisibilidade</em> (self) 1/dia.</td>
+            </tr>
+            <tr>
+                <td class="center">6</td>
+                <td><strong>Silêncio:</strong> Conjure <em>Silêncio</em> 1/dia.</td>
+            </tr>
+            <tr>
+                <td class="center">7</td>
+                <td><strong>Escuridão:</strong> Conjure <em>Escuridão</em> 1/dia.</td>
+            </tr>
+            <tr>
+                <td class="center">8</td>
+                <td><strong>Sem Rastros:</strong> Conjure <em>Passos sem Pegadas</em> 1/dia.</td>
+            </tr>
+            <tr>
+                <td class="center">9</td>
+                <td><strong>Reflexos:</strong> Você tem vantagem em testes de Iniciativa.</td>
+            </tr>
+            <tr>
+                <td class="center">10</td>
+                <td><strong>Velocidade:</strong> Seu movimento aumenta em +1 distância "perto".</td>
+            </tr>
+            <tr>
+                <td class="center">11</td>
+                <td><strong>Salto:</strong> Você pode saltar o dobro da distância normal.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td><strong>Defesa:</strong> Você ganha +1 na CA se estiver empunhando duas armas.</td>
+            </tr>
         </table>
     </div>
 
@@ -417,9 +770,15 @@
     <div class="class-block">
         <div class="class-title">13. Viking</div>
         <div class="flavor-text">
-            Navegador, manobras com escudos, juramento aos deuses antigos dão bônus diários. Não importa se você é um nórdico violento, um guerreiro helênico de tanga ou um canibal alucinado, sua comunidade original depende de duas coisas, barcos e escudos - e você é mestre nas duas. Acostumado a viver nauticamente, você está em casa em qualquer barco ou canoa. Domina o escudo como a mão esquerda e pode manter-se como uma parede diante do perigo. Por último e não menos especial, diariamente faz juramento aos seus deuses pagãos, podendo ganhar vantagens em combate, sorte ou ardilosidade.
+            Navegador, manobras com escudos, juramento aos deuses antigos dão bônus diários. Não importa se você é um
+            nórdico violento, um guerreiro helênico de tanga ou um canibal alucinado, sua comunidade original depende de
+            duas coisas, barcos e escudos - e você é mestre nas duas. Acostumado a viver nauticamente, você está em casa
+            em qualquer barco ou canoa. Domina o escudo como a mão esquerda e pode manter-se como uma parede diante do
+            perigo. Por último e não menos especial, diariamente faz juramento aos seus deuses pagãos, podendo ganhar
+            vantagens em combate, sorte ou ardilosidade.
         </div>
-        <div class="stats-row">Armas: Adaga, Machados, Arco Longo, Espada, Lança • Armadura: Couro, Malha, Escudo • PV: 1d8</div>
+        <div class="stats-row">Armas: Adaga, Machados, Arco Longo, Espada, Lança • Armadura: Couro, Malha, Escudo • PV:
+            1d8</div>
         <ul>
             <li><strong>Parede de Escudos:</strong> Ação para ter CA 20 (com escudo).</li>
             <li><strong>Deuses Antigos (Escolha 1/dia):</strong>
@@ -428,23 +787,68 @@
                 <br><em>Loki:</em> Vantagem em mentir/esgueirar.
             </li>
         </ul>
-        
+
         <table>
-            <tr><th colspan="4">Títulos de Viking</th></tr>
-            <tr><td class="center">1-2</td><td>Povo Livre</td><td>Ralé</td><td>Andarilho</td></tr>
-            <tr><td class="center">3-4</td><td>Escudeiro</td><td>Incursor</td><td>Explorador</td></tr>
-            <tr><td class="center">5-6</td><td>Thane</td><td>Saqueador</td><td>Aventureiro</td></tr>
-            <tr><td class="center">7-8</td><td>Jarl</td><td>Conquistador</td><td>Renomado</td></tr>
-            <tr><td class="center">9-10</td><td>Rei/Rainha</td><td>Usurpador</td><td>Lendário</td></tr>
+            <tr>
+                <th colspan="4">Títulos de Viking</th>
+            </tr>
+            <tr>
+                <td class="center">1-2</td>
+                <td>Povo Livre</td>
+                <td>Ralé</td>
+                <td>Andarilho</td>
+            </tr>
+            <tr>
+                <td class="center">3-4</td>
+                <td>Escudeiro</td>
+                <td>Incursor</td>
+                <td>Explorador</td>
+            </tr>
+            <tr>
+                <td class="center">5-6</td>
+                <td>Thane</td>
+                <td>Saqueador</td>
+                <td>Aventureiro</td>
+            </tr>
+            <tr>
+                <td class="center">7-8</td>
+                <td>Jarl</td>
+                <td>Conquistador</td>
+                <td>Renomado</td>
+            </tr>
+            <tr>
+                <td class="center">9-10</td>
+                <td>Rei/Rainha</td>
+                <td>Usurpador</td>
+                <td>Lendário</td>
+            </tr>
         </table>
 
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>1/dia Frenesi (imune a dano 3 rodadas).</td></tr>
-            <tr><td class="center">3-6</td><td>+1 de dano.</td></tr>
-            <tr><td class="center">7-9</td><td>+2 FOR/CON ou +1 ataque.</td></tr>
-            <tr><td class="center">10-11</td><td>Dualidade: Escolha 2 efeitos dos Deuses/dia.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>1/dia Frenesi (imune a dano 3 rodadas).</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+1 de dano.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+2 FOR/CON ou +1 ataque.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Dualidade: Escolha 2 efeitos dos Deuses/dia.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -452,7 +856,11 @@
     <div class="class-block">
         <div class="class-title">14. Ranger</div>
         <div class="flavor-text">
-            Explorador, sobrevivente, especialista em natureza, fabrica poções com ervas. Senhor da selva, sua capacidade de combate é excelente mas incomparável em ambiente natural. Adepto da agilidade e da astúcia pode ser fatal a qualquer distância. Seus conhecimentos permitem misturar ervas e criar unguentos capazes de curar e criar diversos efeitos. Excelente com o arco ou qualquer arma de destreza, boa resistência e dano moderado.
+            Explorador, sobrevivente, especialista em natureza, fabrica poções com ervas. Senhor da selva, sua
+            capacidade de combate é excelente mas incomparável em ambiente natural. Adepto da agilidade e da astúcia
+            pode ser fatal a qualquer distância. Seus conhecimentos permitem misturar ervas e criar unguentos capazes de
+            curar e criar diversos efeitos. Excelente com o arco ou qualquer arma de destreza, boa resistência e dano
+            moderado.
         </div>
         <div class="stats-row">Armas: Adaga, Arcos, Espadas, Lança, Cajado • Armadura: Couro, Malha • PV: 1d8</div>
         <ul>
@@ -466,12 +874,30 @@
             </li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Dano da arma escolhida vira 1d12.</td></tr>
-            <tr><td class="center">3-6</td><td>+1 ataque e dano (corpo a corpo ou distância).</td></tr>
-            <tr><td class="center">7-9</td><td>+2 FOR, DES ou INT.</td></tr>
-            <tr><td class="center">10-11</td><td>Vantagem no teste de um remédio específico.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Dano da arma escolhida vira 1d12.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+1 ataque e dano (corpo a corpo ou distância).</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+2 FOR, DES ou INT.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Vantagem no teste de um remédio específico.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -479,7 +905,12 @@
     <div class="class-block">
         <div class="class-title">15. Metamorfo</div>
         <div class="flavor-text">
-            Assume gradativamente forma animal, ataques ferais e resistência sobrenatural. Não se sabe se você descende de um druida, um licantropo ou alguma espécie de fera inumana. O que importa é que não muito depois de se tornar um jovem seu corpo começou a mudar e sua própria natureza selvagem o convocou para aventura. Você é capaz de mudar de forma e realizar ataques trucidantes, além disso, seus sentidos animais e poderes fisiológicos vão se desenvolvendo conforme sobe de nível. São excelentes arremessadores resultado dos sentidos aguçados.
+            Assume gradativamente forma animal, ataques ferais e resistência sobrenatural. Não se sabe se você descende
+            de um druida, um licantropo ou alguma espécie de fera inumana. O que importa é que não muito depois de se
+            tornar um jovem seu corpo começou a mudar e sua própria natureza selvagem o convocou para aventura. Você é
+            capaz de mudar de forma e realizar ataques trucidantes, além disso, seus sentidos animais e poderes
+            fisiológicos vão se desenvolvendo conforme sobe de nível. São excelentes arremessadores resultado dos
+            sentidos aguçados.
         </div>
         <div class="stats-row">Armas: Distância • Armadura: Couro, Malha, Escudos • PV: 1d8</div>
         <ul>
@@ -488,12 +919,30 @@
             <li><strong>Pele de Fera:</strong> Soma CON à CA.</li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>+1 uso diário de Forma de Fera.</td></tr>
-            <tr><td class="center">3-5</td><td>Aumenta a categoria do dado de dano do Ataque da Fera.</td></tr>
-            <tr><td class="center">6-9</td><td>+2 FOR/CON ou +1 CA sem armadura.</td></tr>
-            <tr><td class="center">10-11</td><td>Cria um item mágico animal.</td></tr>
-            <tr><td class="center">12</td><td>Selecione e adicione um novo tipo de ataque de fera.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>+1 uso diário de Forma de Fera.</td>
+            </tr>
+            <tr>
+                <td class="center">3-5</td>
+                <td>Aumenta a categoria do dado de dano do Ataque da Fera.</td>
+            </tr>
+            <tr>
+                <td class="center">6-9</td>
+                <td>+2 FOR/CON ou +1 CA sem armadura.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Cria um item mágico animal.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Selecione e adicione um novo tipo de ataque de fera.</td>
+            </tr>
         </table>
     </div>
 
@@ -501,7 +950,11 @@
     <div class="class-block">
         <div class="class-title">16. Assassino</div>
         <div class="flavor-text">
-            Ataques ardilosos, disfarces, venenos, matar sem ser visto. Diferente do ladrão, que é essencialmente um explorador e o ninja que é um artista marcial, o assassino é um especialista na morte. Você pode ser o saltador de telhados, a pior carona possível ou a dançarina fatal, não importando a sua origem ou método, o seu hábito é garantir que o seu alvo morra, de preferência sem nem saber disso. Cogite essa classe se o seu ladrão ou ninja na verdade é um tremendo enganador carismático.
+            Ataques ardilosos, disfarces, venenos, matar sem ser visto. Diferente do ladrão, que é essencialmente um
+            explorador e o ninja que é um artista marcial, o assassino é um especialista na morte. Você pode ser o
+            saltador de telhados, a pior carona possível ou a dançarina fatal, não importando a sua origem ou método, o
+            seu hábito é garantir que o seu alvo morra, de preferência sem nem saber disso. Cogite essa classe se o seu
+            ladrão ou ninja na verdade é um tremendo enganador carismático.
         </div>
         <div class="stats-row">Armas: Clava, Besta, Adaga, Espada Curta, Lança • Armadura: Couro, Malha • PV: 1d6</div>
         <ul>
@@ -509,12 +962,30 @@
             <li><strong>Veneno:</strong> Aplica veneno (3 rodadas). Próximo ataque +1d4 dano.</li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Nova arma ou armadura.</td></tr>
-            <tr><td class="center">3-6</td><td>+2 FOR ou DES.</td></tr>
-            <tr><td class="center">7-9</td><td>+1 ataque/dano com arma escolhida.</td></tr>
-            <tr><td class="center">10-11</td><td>Veneno causa +1 ponto de dano.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Nova arma ou armadura.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+2 FOR ou DES.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+1 ataque/dano com arma escolhida.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Veneno causa +1 ponto de dano.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -522,7 +993,12 @@
     <div class="class-block">
         <div class="class-title">17. Mestre das Feras</div>
         <div class="flavor-text">
-            Caçador, companhia animal do mesmo nível, domínio sobre feras, faz armadilhas. Você é um guerreiro que se sente melhor entre os animais do que com outras pessoas. Com consequência disso tem sempre um companheiro animal do mesmo nível que o seu e pode trocar por outros ao longo do tempo. Você é acostumado a viver em ambiente selvagem e lidar com seus habitantes, sabendo lidar com cada tipo de animal, podendo inclusive domesticá-los, sendo essencial para lidar com montarias ou grande feras, além disso, pode fazer armadilhas, não importando o alvo.
+            Caçador, companhia animal do mesmo nível, domínio sobre feras, faz armadilhas. Você é um guerreiro que se
+            sente melhor entre os animais do que com outras pessoas. Com consequência disso tem sempre um companheiro
+            animal do mesmo nível que o seu e pode trocar por outros ao longo do tempo. Você é acostumado a viver em
+            ambiente selvagem e lidar com seus habitantes, sabendo lidar com cada tipo de animal, podendo inclusive
+            domesticá-los, sendo essencial para lidar com montarias ou grande feras, além disso, pode fazer armadilhas,
+            não importando o alvo.
         </div>
         <div class="stats-row">Armas: Clava, Adaga, Machado Grande, Maça, Lança • PV: 1d8</div>
         <ul>
@@ -530,12 +1006,30 @@
             <li><strong>Armadilhas:</strong> Cria armadilha de tropeço (1d4 dano).</li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Nova arma ou armadura.</td></tr>
-            <tr><td class="center">3-6</td><td>+2 FOR ou CAR.</td></tr>
-            <tr><td class="center">7-9</td><td>+1 em testes de Afinidade Animal.</td></tr>
-            <tr><td class="center">10-11</td><td>Armadilhas causam +1 dano.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Nova arma ou armadura.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+2 FOR ou CAR.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+1 em testes de Afinidade Animal.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Armadilhas causam +1 dano.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -543,7 +1037,15 @@
     <div class="class-block">
         <div class="class-title">18. Górgona</div>
         <div class="flavor-text">
-            Petrificador, resistente a dano, pele de pedra “das cavernas”. Você veio de outro povo, talvez de um lugar distante, quem sabe de outro tempo. Não há como saber se algum antepassado seu foi amaldiçoado, se um dos elementais antigos fez parte da sua vida ou se de alguma forma seu sangue seja diferente, talvez tenha só nascido perto de um vulcão ou no meio de um terremoto. O que importa é que assim como o da medusa, o seu olhar pode paralisar os seres, seu sangue é mais denso, resistente a venenos e sua pele é blindada. Esses guerreiros costumam evitar a civilização por completo ou ainda vir de uma origem ainda mais exótica e dominam técnicas de fabricação de armas de obsidianas, frágeis se comparadas com o aço mas afiadíssimas. Desprezam qualquer tipo de armaduras e muitas vezes são vistos semi-nus enquanto paralisam seus oponentes surpresos.
+            Petrificador, resistente a dano, pele de pedra “das cavernas”. Você veio de outro povo, talvez de um lugar
+            distante, quem sabe de outro tempo. Não há como saber se algum antepassado seu foi amaldiçoado, se um dos
+            elementais antigos fez parte da sua vida ou se de alguma forma seu sangue seja diferente, talvez tenha só
+            nascido perto de um vulcão ou no meio de um terremoto. O que importa é que assim como o da medusa, o seu
+            olhar pode paralisar os seres, seu sangue é mais denso, resistente a venenos e sua pele é blindada. Esses
+            guerreiros costumam evitar a civilização por completo ou ainda vir de uma origem ainda mais exótica e
+            dominam técnicas de fabricação de armas de obsidianas, frágeis se comparadas com o aço mas afiadíssimas.
+            Desprezam qualquer tipo de armaduras e muitas vezes são vistos semi-nus enquanto paralisam seus oponentes
+            surpresos.
         </div>
         <div class="stats-row">Armas: Bumerangue, Clava, Adaga, Lança • Armadura: Nenhuma • PV: 1d8</div>
         <ul>
@@ -551,12 +1053,30 @@
             <li><strong>Pele de Pedra:</strong> CA = 12 + metade do nível. Vantagem furtividade natural.</li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Encontra ovo de basilisco (pet).</td></tr>
-            <tr><td class="center">3-6</td><td>+1 ataque e dano.</td></tr>
-            <tr><td class="center">7-9</td><td>+2 FOR, DES ou CON.</td></tr>
-            <tr><td class="center">10-11</td><td>+1 uso do Olhar Petrificante.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Encontra ovo de basilisco (pet).</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+1 ataque e dano.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+2 FOR, DES ou CON.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>+1 uso do Olhar Petrificante.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -564,7 +1084,11 @@
     <div class="class-block">
         <div class="class-title">19. Necromante</div>
         <div class="flavor-text">
-            Arcanista que domina os mortos-vivos e os caminhos da morte. Você estudou as artes proibidas e seus segredos sinistros. Essencialmente um mago que além do conhecimento secreto, sabe encantar os mortos, tornando-os seus lacaios, além de contar com sua fiel maça, sacrificar a ética por conhecimento também o habilitou a decifrar os códigos secretos podendo, aprender feitiços que encontrar pelo caminho sem precisar do tempo que um conjurador tradicional teria.
+            Arcanista que domina os mortos-vivos e os caminhos da morte. Você estudou as artes proibidas e seus segredos
+            sinistros. Essencialmente um mago que além do conhecimento secreto, sabe encantar os mortos, tornando-os
+            seus lacaios, além de contar com sua fiel maça, sacrificar a ética por conhecimento também o habilitou a
+            decifrar os códigos secretos podendo, aprender feitiços que encontrar pelo caminho sem precisar do tempo que
+            um conjurador tradicional teria.
         </div>
         <div class="stats-row">Armas: Adaga, Maça, Cajado • Armadura: Nenhuma • PV: 1d4</div>
         <ul>
@@ -572,12 +1096,30 @@
             <li><strong>Estudo:</strong> Aprende pergaminhos permanentemente (INT CD 15).</li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>+1 em testes de Comandar Mortos.</td></tr>
-            <tr><td class="center">3-6</td><td>+2 INT ou CAR.</td></tr>
-            <tr><td class="center">7-9</td><td>Lança 1 magia específica com vantagem.</td></tr>
-            <tr><td class="center">10-11</td><td>Ganha 1 magia conhecida extra.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>+1 em testes de Comandar Mortos.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+2 INT ou CAR.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>Lança 1 magia específica com vantagem.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Ganha 1 magia conhecida extra.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -585,7 +1127,12 @@
     <div class="class-block">
         <div class="class-title">20. Valquíria</div>
         <div class="flavor-text">
-            Uma guerreira abençoada com acesso a magias divinas e familiares auxiliares. Diferente de um clérigo tradicional, você é uma amazona que depois de nascer, de uma grande batalha ou de uma experiência de quase morte foi abençoada pela deusa da guerra. Além de ser capaz de usar todas as armas, escudos e armaduras depois do terceiro nível você aprende encantamentos de clérigo. Possui um familiar voador místico que pode ajudar com mensagens e combate, multiplicando por cada nível. Você não se comunica diretamente com a deusa mas a sua presença pode ser sentida nos momentos mais precisos.
+            Uma guerreira abençoada com acesso a magias divinas e familiares auxiliares. Diferente de um clérigo
+            tradicional, você é uma amazona que depois de nascer, de uma grande batalha ou de uma experiência de quase
+            morte foi abençoada pela deusa da guerra. Além de ser capaz de usar todas as armas, escudos e armaduras
+            depois do terceiro nível você aprende encantamentos de clérigo. Possui um familiar voador místico que pode
+            ajudar com mensagens e combate, multiplicando por cada nível. Você não se comunica diretamente com a deusa
+            mas a sua presença pode ser sentida nos momentos mais precisos.
         </div>
         <div class="stats-row">Armas: Todas • Armadura: Todas • PV: 1d8</div>
         <ul>
@@ -593,12 +1140,30 @@
             <li><strong>Magias:</strong> Conjura como Clérigo a partir do nível 3.</li>
         </ul>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Corvos ganham +1 PV, +1 atk, +1 CA.</td></tr>
-            <tr><td class="center">3-6</td><td>+2 FOR ou DES.</td></tr>
-            <tr><td class="center">7-9</td><td>+1 atk/dano com arma escolhida.</td></tr>
-            <tr><td class="center">10-11</td><td>Ganha 1 magia de clérigo conhecida.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Corvos ganham +1 PV, +1 atk, +1 CA.</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+2 FOR ou DES.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>+1 atk/dano com arma escolhida.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Ganha 1 magia de clérigo conhecida.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
@@ -606,46 +1171,115 @@
     <div class="class-block">
         <div class="class-title">21. Bruxa</div>
         <div class="flavor-text">
-            Conjuradora de forças diabólicas, fabrica poções, companheiro familiar, maldições. Da mesma forma que um clérigo você tem uma deidade que lhe empresta os poderes esse tipo de conjurador faz o mesmo com entidades diabólicas. Pode fabricar poções que curam ou envenenam, mediante concentração, pode atrapalhar completamente as ações de um adversário. Apesar de não ser tão resistente como um clérigo conta com armadura média e uma boa quantidade de armas como opções.
+            Conjuradora de forças diabólicas, fabrica poções, companheiro familiar, maldições. Da mesma forma que um
+            clérigo você tem uma deidade que lhe empresta os poderes esse tipo de conjurador faz o mesmo com entidades
+            diabólicas. Pode fabricar poções que curam ou envenenam, mediante concentração, pode atrapalhar
+            completamente as ações de um adversário. Apesar de não ser tão resistente como um clérigo conta com armadura
+            média e uma boa quantidade de armas como opções.
         </div>
         <div class="stats-row">Armas: Clava, Besta, Adaga, Espada Curta, Cajado • PV: 1d4</div>
         <ul>
             <li><strong>Preparar Poção (No descanso):</strong> Cria Cura (1d4) ou Veneno (1d8 ingerido/1d2 arma).</li>
             <li><strong>Maldição:</strong> Foco para dar desvantagem a um inimigo.</li>
         </ul>
-        
+
         <table class="titles-table">
-            <tr><th colspan="4">Títulos de Bruxa</th></tr>
-            <tr><td class="center">1-2</td><td>Cartomante</td><td>Sussurrador</td><td>Xamã</td></tr>
-            <tr><td class="center">3-4</td><td>Vidante</td><td>Amaldiçoador</td><td>Conjurador</td></tr>
-            <tr><td class="center">5-6</td><td>Profeta</td><td>Megera</td><td>Adivinho</td></tr>
-            <tr><td class="center">7-8</td><td>Sábia</td><td>Anciã</td><td>Condutor</td></tr>
-            <tr><td class="center">9-10</td><td>Baba</td><td>Baba</td><td>Baba</td></tr>
+            <tr>
+                <th colspan="4">Títulos de Bruxa</th>
+            </tr>
+            <tr>
+                <td class="center">1-2</td>
+                <td>Cartomante</td>
+                <td>Sussurrador</td>
+                <td>Xamã</td>
+            </tr>
+            <tr>
+                <td class="center">3-4</td>
+                <td>Vidante</td>
+                <td>Amaldiçoador</td>
+                <td>Conjurador</td>
+            </tr>
+            <tr>
+                <td class="center">5-6</td>
+                <td>Profeta</td>
+                <td>Megera</td>
+                <td>Adivinho</td>
+            </tr>
+            <tr>
+                <td class="center">7-8</td>
+                <td>Sábia</td>
+                <td>Anciã</td>
+                <td>Condutor</td>
+            </tr>
+            <tr>
+                <td class="center">9-10</td>
+                <td>Baba</td>
+                <td>Baba</td>
+                <td>Baba</td>
+            </tr>
         </table>
 
         <table>
-            <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Poções melhoradas (+1 cura/dano).</td></tr>
-            <tr><td class="center">3-6</td><td>+2 SAB ou CON.</td></tr>
-            <tr><td class="center">7-9</td><td>Lança 1 magia específica com vantagem.</td></tr>
-            <tr><td class="center">10-11</td><td>Ganha 1 magia conhecida extra.</td></tr>
-            <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Talento</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>Poções melhoradas (+1 cura/dano).</td>
+            </tr>
+            <tr>
+                <td class="center">3-6</td>
+                <td>+2 SAB ou CON.</td>
+            </tr>
+            <tr>
+                <td class="center">7-9</td>
+                <td>Lança 1 magia específica com vantagem.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Ganha 1 magia conhecida extra.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha um talento ou +2 pontos de atributo.</td>
+            </tr>
         </table>
     </div>
 
     <div class="appendix">
         <h1>Apêndice: Magias & Regras</h1>
-        
+
         <div class="class-block">
             <h3>Acidentes Mágicos do Mago (d12)</h3>
             <p>Se um mago tirar "1" natural ao conjurar:</p>
             <table>
-                <tr><th width="10%">d12</th><th>Efeito</th></tr>
-                <tr><td class="center">1-4</td><td><strong>Fagulha:</strong> A magia falha e você não pode conjurá-la novamente até descansar.</td></tr>
-                <tr><td class="center">5-8</td><td><strong>Choque:</strong> Como acima, e você toma 1d4 de dano por nível da magia.</td></tr>
-                <tr><td class="center">9-10</td><td><strong>Dreno:</strong> Como acima, e você esquece a magia permanentemente (precisa reaprender).</td></tr>
-                <tr><td class="center">11</td><td><strong>Caos:</strong> Role na tabela de Magia Selvagem (ou efeito aleatório do mestre).</td></tr>
-                <tr><td class="center">12</td><td><strong>Catástrofe:</strong> Explode em chamas arcanas. 1d6 de dano por nível em todos a "perto".</td></tr>
+                <tr>
+                    <th width="10%">d12</th>
+                    <th>Efeito</th>
+                </tr>
+                <tr>
+                    <td class="center">1-4</td>
+                    <td><strong>Fagulha:</strong> A magia falha e você não pode conjurá-la novamente até descansar.</td>
+                </tr>
+                <tr>
+                    <td class="center">5-8</td>
+                    <td><strong>Choque:</strong> Como acima, e você toma 1d4 de dano por nível da magia.</td>
+                </tr>
+                <tr>
+                    <td class="center">9-10</td>
+                    <td><strong>Dreno:</strong> Como acima, e você esquece a magia permanentemente (precisa reaprender).
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center">11</td>
+                    <td><strong>Caos:</strong> Role na tabela de Magia Selvagem (ou efeito aleatório do mestre).</td>
+                </tr>
+                <tr>
+                    <td class="center">12</td>
+                    <td><strong>Catástrofe:</strong> Explode em chamas arcanas. 1d6 de dano por nível em todos a
+                        "perto".</td>
+                </tr>
             </table>
         </div>
 
@@ -653,25 +1287,80 @@
             <h3>Acidentes Diabólicos (Bruxo/Bruxa) (d12)</h3>
             <p>Se um Bruxo ou Bruxa tirar "1" natural ao conjurar:</p>
             <table>
-                <tr><th width="10%">d12</th><th>Efeito (Tier 1-2)</th><th>Efeito (Tier 3-4)</th></tr>
-                <tr><td class="center">1</td><td><strong>Diabrura!</strong> Role duas vezes.</td><td><strong>Maelstrom!</strong> Role duas vezes.</td></tr>
-                <tr><td class="center">2</td><td><strong>Definhar:</strong> Toma 1d6 dano/tier.</td><td><strong>Ruína:</strong> Toma 1d8 dano/tier.</td></tr>
-                <tr><td class="center">3</td><td><strong>Tritão:</strong> Vira um tritão/sapo (1 PV) por 3 rodadas.</td><td><strong>Podridão Mental:</strong> Esquece 1 magia aleatória para sempre.</td></tr>
-                <tr><td class="center">4</td><td><strong>Marca de Shune:</strong> Olhos brilham verde, cegueira 1 min.</td><td><strong>O Homem de Salgueiro:</strong> Invoca-o hostil por 1d6 rodadas.</td></tr>
-                <tr><td class="center">5</td><td><strong>Terror:</strong> Foge amedrontado por 1 rodada.</td><td><strong>Diabretes Malditos:</strong> 3 diabretes roubam 3 itens seus.</td></tr>
-                <tr><td class="center">6</td><td><strong>Sangrar:</strong> Perde 1 PV a cada rodada (teste CON 12 para).</td><td><strong>Explosão de Raios:</strong> 3d6 dano em você e todos perto.</td></tr>
-                <tr><td class="center">7</td><td><strong>Corrupção:</strong> Fica fedendo a enxofre até o banho.</td><td><strong>Ferro Frio:</strong> Espinhos etéreos: 2d6 dano e paralisia (2 rodadas).</td></tr>
-                <tr><td class="center">8</td><td><strong>Escuridão:</strong> Luzes apagam em área "perto".</td><td><strong>Mãe da Noite:</strong> Desaparece por 1d4 rodadas (plano das sombras).</td></tr>
-                <tr><td class="center">9</td><td><strong>Possessão Menor:</strong> Ataca aliado próximo (1 rodada).</td><td><strong>Possessão Maior:</strong> O Patrono controla você por 10 minutos.</td></tr>
-                <tr><td class="center">10</td><td><strong>Sussurros:</strong> Ouve vozes, desvantagem em INT/SAB (1h).</td><td><strong>Olhar do Vazio:</strong> Cego e surdo por 1 hora.</td></tr>
-                <tr><td class="center">11</td><td><strong>Gelo:</strong> Congela no lugar (imóvel) por 1 rodada.</td><td><strong>Anulação:</strong> Perde toda magia por 1 dia.</td></tr>
-                <tr><td class="center">12</td><td><strong>Presente:</strong> A magia funciona, mas o patrono exige um favor.</td><td><strong>Pacto de Sangue:</strong> A magia funciona maximizada, mas você perde 1d4 CON permanente.</td></tr>
+                <tr>
+                    <th width="10%">d12</th>
+                    <th>Efeito (Tier 1-2)</th>
+                    <th>Efeito (Tier 3-4)</th>
+                </tr>
+                <tr>
+                    <td class="center">1</td>
+                    <td><strong>Diabrura!</strong> Role duas vezes.</td>
+                    <td><strong>Maelstrom!</strong> Role duas vezes.</td>
+                </tr>
+                <tr>
+                    <td class="center">2</td>
+                    <td><strong>Definhar:</strong> Toma 1d6 dano/tier.</td>
+                    <td><strong>Ruína:</strong> Toma 1d8 dano/tier.</td>
+                </tr>
+                <tr>
+                    <td class="center">3</td>
+                    <td><strong>Tritão:</strong> Vira um tritão/sapo (1 PV) por 3 rodadas.</td>
+                    <td><strong>Podridão Mental:</strong> Esquece 1 magia aleatória para sempre.</td>
+                </tr>
+                <tr>
+                    <td class="center">4</td>
+                    <td><strong>Marca de Shune:</strong> Olhos brilham verde, cegueira 1 min.</td>
+                    <td><strong>O Homem de Salgueiro:</strong> Invoca-o hostil por 1d6 rodadas.</td>
+                </tr>
+                <tr>
+                    <td class="center">5</td>
+                    <td><strong>Terror:</strong> Foge amedrontado por 1 rodada.</td>
+                    <td><strong>Diabretes Malditos:</strong> 3 diabretes roubam 3 itens seus.</td>
+                </tr>
+                <tr>
+                    <td class="center">6</td>
+                    <td><strong>Sangrar:</strong> Perde 1 PV a cada rodada (teste CON 12 para).</td>
+                    <td><strong>Explosão de Raios:</strong> 3d6 dano em você e todos perto.</td>
+                </tr>
+                <tr>
+                    <td class="center">7</td>
+                    <td><strong>Corrupção:</strong> Fica fedendo a enxofre até o banho.</td>
+                    <td><strong>Ferro Frio:</strong> Espinhos etéreos: 2d6 dano e paralisia (2 rodadas).</td>
+                </tr>
+                <tr>
+                    <td class="center">8</td>
+                    <td><strong>Escuridão:</strong> Luzes apagam em área "perto".</td>
+                    <td><strong>Mãe da Noite:</strong> Desaparece por 1d4 rodadas (plano das sombras).</td>
+                </tr>
+                <tr>
+                    <td class="center">9</td>
+                    <td><strong>Possessão Menor:</strong> Ataca aliado próximo (1 rodada).</td>
+                    <td><strong>Possessão Maior:</strong> O Patrono controla você por 10 minutos.</td>
+                </tr>
+                <tr>
+                    <td class="center">10</td>
+                    <td><strong>Sussurros:</strong> Ouve vozes, desvantagem em INT/SAB (1h).</td>
+                    <td><strong>Olhar do Vazio:</strong> Cego e surdo por 1 hora.</td>
+                </tr>
+                <tr>
+                    <td class="center">11</td>
+                    <td><strong>Gelo:</strong> Congela no lugar (imóvel) por 1 rodada.</td>
+                    <td><strong>Anulação:</strong> Perde toda magia por 1 dia.</td>
+                </tr>
+                <tr>
+                    <td class="center">12</td>
+                    <td><strong>Presente:</strong> A magia funciona, mas o patrono exige um favor.</td>
+                    <td><strong>Pacto de Sangue:</strong> A magia funciona maximizada, mas você perde 1d4 CON
+                        permanente.</td>
+                </tr>
             </table>
         </div>
 
         <div class="class-block">
             <h3>Penitência do Clérigo</h3>
-            <p>Se um Clérigo falhar em seguir seu deus ou violar seu alinhamento, ele perde a capacidade de conjurar magias e usar talentos divinos. Para recuperar os poderes, ele deve realizar uma <strong>Penitência</strong>.</p>
+            <p>Se um Clérigo falhar em seguir seu deus ou violar seu alinhamento, ele perde a capacidade de conjurar
+                magias e usar talentos divinos. Para recuperar os poderes, ele deve realizar uma
+                <strong>Penitência</strong>.</p>
             <p>A natureza exata é determinada pelo Mestre, mas geralmente envolve:</p>
             <ul>
                 <li>Realizar uma missão sagrada perigosa sem recompensa.</li>
@@ -680,25 +1369,49 @@
             </ul>
         </div>
 
-        <h2>Magias de Natureza (Druida/Xamã)</h2>
+        <h2>Magias de Druida (Cursed Scroll 4)</h2>
+        <p class="flavor-text">Magos Neutros também podem aprender estas magias.</p>
+
         <h3>Tier 1</h3>
         <div class="spell-list">
-            <p><strong>Abraço da Flora:</strong> Vinhas prendem inimigo (FOR CD 12).</p>
-            <p><strong>Coração de Leão:</strong> Aliado ganha +2 em dano e +1 em moral.</p>
-            <p><strong>Sibilara da Víbora:</strong> Inimigos em área "perto" fazem teste moral.</p>
-            <p><strong>Recompensa Sagrada:</strong> Cria comida para 4 pessoas.</p>
-            <p><strong>Purga Xamânica:</strong> Remove veneno ou doença de um alvo.</p>
-            <p><strong>Casco da Tartaruga:</strong> Alvo ganha +2 CA por 5 rodadas.</p>
+            <p><strong>Fôlego (Breath):</strong> Segura a respiração por 10 rodadas (Self).</p>
+            <p><strong>Infundir (Instill):</strong> Arma vira mágica +1 por 5 rodadas (Cajado causa d6).</p>
+            <p><strong>Oxidar (Oxidize):</strong> Objeto inanimado pequeno envelhece d100 anos instantaneamente.</p>
+            <p><strong>Vento Sussurrante (Whisperwind):</strong> Envia mensagem sussurrada a um alvo distante (Far).</p>
         </div>
 
-            <h3>Tier 2</h3>
+        <h3>Tier 2</h3>
         <div class="spell-list">
-            <p><strong>Chamado da Natureza:</strong> Invoca um animal (Lobo/Javali) aliado.</p>
-            <p><strong>Dança do Tambor:</strong> Aliados ganham vantagem em Iniciativa e não podem ser surpresos.</p>
-            <p><strong>Intervenção Divina:</strong> Cura 2d6 ou remove maldição.</p>
-            <p><strong>Presente da Terra:</strong> Transforma terreno em lama ou pedra (dificulta movimento).</p>
-            <p><strong>Graça da Gazela:</strong> Dobra o movimento de um alvo.</p>
-            <p><strong>Voz da Verdade:</strong> Obriga criatura a falar a verdade.</p>
+            <p><strong>Pele de Árvore (Barkskin):</strong> AC 15 (18 crítico) por 1 dia. Dano duplo de fogo. (Self).</p>
+            <p><strong>Amizade (Befriend):</strong> Criatura natural minúscula vira amiga por 5 rodadas. Obedece 1
+                comando.</p>
+            <p><strong>Magnetizar (Magnetize):</strong> Objeto vira ímã por 5 rodadas. Atrai metal próximo.</p>
+            <p><strong>Fala Verdadeira (Truespeech):</strong> Criatura natural entende você. Responde 1 pergunta Sim/Não
+                (Instant).</p>
+        </div>
+
+        <h3>Tier 3</h3>
+        <div class="spell-list">
+            <p><strong>Alquimia (Alchemy):</strong> Transforma objeto inanimado em outro material de igual valor.</p>
+            <p><strong>Anima (Anima):</strong> Objeto natural vira criatura leal (NV = Seu NV) enquanto durar o foco.
+            </p>
+            <p><strong>Gafanhotos (Locusts):</strong> Nuvem causa 1d10 dano/rodada e imobiliza (CON nega) em área Perto
+                (Focus).</p>
+            <p><strong>Forma de Árvore (Treeshape):</strong> Vira Ente por 10 rodadas. AC 14, HP 38, Atk +8 (1d12).</p>
+        </div>
+
+        <h3>Tier 4</h3>
+        <div class="spell-list">
+            <p><strong>Micélio (Mycelium):</strong> Conecta com fungos. Faça 1 pergunta ao Mestre (max 15 palavras).</p>
+            <p><strong>Invocar Tempestade (Summon Storm):</strong> Tempestade de 1 milha. Permite lançar <em>Controlar
+                    Água</em> e <em>Relâmpago</em>.</p>
+        </div>
+
+        <h3>Tier 5</h3>
+        <div class="spell-list">
+            <p><strong>Terremoto (Earthquake):</strong> 4d6 dano em área enorme. DEX ou engolido pela terra (Morte).</p>
+            <p><strong>Nomeação (Naming):</strong> Aprende Nome Verdadeiro. Pode renomear criatura (muda alinhamento
+                para o seu).</p>
         </div>
 
         <h2>Patronos do Bruxo & Dádivas (2d6)</h2>
@@ -707,83 +1420,193 @@
         <h3>Almazzat</h3>
         <p>Um arqui-demônio com cabeça de lobo, seis olhos e seis chifres. Busca as Areias das Eras.</p>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Dádiva</th></tr>
-            <tr><td class="center">2</td><td>1/dia, vantagem em ataques corpo a corpo por 3 rodadas.</td></tr>
-            <tr><td class="center">3-7</td><td>Aprenda a usar 1 arma corpo a corpo ou +1 no ataque corpo a corpo.</td></tr>
-            <tr><td class="center">8-9</td><td>+2 em Força ou Constituição ou +1 de dano corpo a corpo.</td></tr>
-            <tr><td class="center">10-11</td><td>Vantagem em testes de iniciativa.</td></tr>
-            <tr><td class="center">12</td><td>Escolha uma opção ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Dádiva</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>1/dia, vantagem em ataques corpo a corpo por 3 rodadas.</td>
+            </tr>
+            <tr>
+                <td class="center">3-7</td>
+                <td>Aprenda a usar 1 arma corpo a corpo ou +1 no ataque corpo a corpo.</td>
+            </tr>
+            <tr>
+                <td class="center">8-9</td>
+                <td>+2 em Força ou Constituição ou +1 de dano corpo a corpo.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Vantagem em testes de iniciativa.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha uma opção ou +2 pontos de atributo.</td>
+            </tr>
         </table>
 
         <h3>Kytheros</h3>
         <p>O Senhor do Tempo que vê todos os futuros. Busca o cumprimento dos destinos.</p>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Dádiva</th></tr>
-            <tr><td class="center">2</td><td>1/dia, obrigue o MJ a rerrolar um único dado.</td></tr>
-            <tr><td class="center">3-7</td><td>Ganhe +1 na CA através de previsão sobrenatural.</td></tr>
-            <tr><td class="center">8-9</td><td>+2 em Força, Destreza ou Sabedoria.</td></tr>
-            <tr><td class="center">10-11</td><td>3/dia, adicione seu bônus de SAB a qualquer rolagem.</td></tr>
-            <tr><td class="center">12</td><td>Escolha uma opção ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Dádiva</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>1/dia, obrigue o MJ a rerrolar um único dado.</td>
+            </tr>
+            <tr>
+                <td class="center">3-7</td>
+                <td>Ganhe +1 na CA através de previsão sobrenatural.</td>
+            </tr>
+            <tr>
+                <td class="center">8-9</td>
+                <td>+2 em Força, Destreza ou Sabedoria.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>3/dia, adicione seu bônus de SAB a qualquer rolagem.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha uma opção ou +2 pontos de atributo.</td>
+            </tr>
         </table>
 
         <h3>Mugdulblub</h3>
         <p>O Limo Ancião que vaza pelas fendas da memória. Busca a dissolução de toda forma física.</p>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Dádiva</th></tr>
-            <tr><td class="center">2</td><td>1/dia, vire uma poça de limo rastejante por 3 rodadas.</td></tr>
-            <tr><td class="center">3-7</td><td>Maximize 2 rolagens de dados de vida (passados ou futuros).</td></tr>
-            <tr><td class="center">8-9</td><td>+2 em Destreza ou Constituição.</td></tr>
-            <tr><td class="center">10-11</td><td>Torne-se imune a 1: ácido, frio ou veneno (escolha).</td></tr>
-            <tr><td class="center">12</td><td>Escolha uma opção ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Dádiva</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>1/dia, vire uma poça de limo rastejante por 3 rodadas.</td>
+            </tr>
+            <tr>
+                <td class="center">3-7</td>
+                <td>Maximize 2 rolagens de dados de vida (passados ou futuros).</td>
+            </tr>
+            <tr>
+                <td class="center">8-9</td>
+                <td>+2 em Destreza ou Constituição.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Torne-se imune a 1: ácido, frio ou veneno (escolha).</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha uma opção ou +2 pontos de atributo.</td>
+            </tr>
         </table>
 
         <h3>Shune, a Vil</h3>
         <p>Uma deusa, a Bruxa Mãe que fala no tremeluzir das velas. Busca segredos ocultos.</p>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Dádiva</th></tr>
-            <tr><td class="center">2</td><td>1/dia, leia a mente de uma criatura que tocar por 3 rodadas.</td></tr>
-            <tr><td class="center">3-7</td><td>Aprenda 1 magia de mago (tier = metade do nível). Use INT.</td></tr>
-            <tr><td class="center">8-9</td><td>+2 em Destreza ou Inteligência.</td></tr>
-            <tr><td class="center">10-11</td><td>+1 XP sempre que aprender um segredo valioso ou significativo.</td></tr>
-            <tr><td class="center">12</td><td>Escolha uma opção ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Dádiva</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>1/dia, leia a mente de uma criatura que tocar por 3 rodadas.</td>
+            </tr>
+            <tr>
+                <td class="center">3-7</td>
+                <td>Aprenda 1 magia de mago (tier = metade do nível). Use INT.</td>
+            </tr>
+            <tr>
+                <td class="center">8-9</td>
+                <td>+2 em Destreza ou Inteligência.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>+1 XP sempre que aprender um segredo valioso ou significativo.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha uma opção ou +2 pontos de atributo.</td>
+            </tr>
         </table>
 
         <h3>Titania</h3>
         <p>A inconstante Rainha das Fadas. Busca travessuras, beleza e arte.</p>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Dádiva</th></tr>
-            <tr><td class="center">2</td><td>1/dia, hipnotize uma criatura de LV 5 ou menos por 3 rodadas.</td></tr>
-            <tr><td class="center">3-7</td><td>Aprenda a usar arco longo ou ganhe +1 em ataques à distância.</td></tr>
-            <tr><td class="center">8-9</td><td>+2 em Destreza ou Carisma.</td></tr>
-            <tr><td class="center">10-11</td><td>Inimigos têm desvantagem ao conjurar magias que te visam.</td></tr>
-            <tr><td class="center">12</td><td>Escolha uma opção ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Dádiva</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>1/dia, hipnotize uma criatura de LV 5 ou menos por 3 rodadas.</td>
+            </tr>
+            <tr>
+                <td class="center">3-7</td>
+                <td>Aprenda a usar arco longo ou ganhe +1 em ataques à distância.</td>
+            </tr>
+            <tr>
+                <td class="center">8-9</td>
+                <td>+2 em Destreza ou Carisma.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>Inimigos têm desvantagem ao conjurar magias que te visam.</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha uma opção ou +2 pontos de atributo.</td>
+            </tr>
         </table>
 
         <h3>O Homem de Salgueiro (The Willowman)</h3>
         <p>Um ser fantasmagórico e alongado que espreita florestas nebulosas. Busca medo.</p>
         <table>
-            <tr><th style="width:10%">2d6</th><th>Dádiva</th></tr>
-            <tr><td class="center">2</td><td>1/dia, teletransporte-se para um local distante que vê (movimento).</td></tr>
-            <tr><td class="center">3-7</td><td>+1 em ataques corpo a corpo ou à distância.</td></tr>
-            <tr><td class="center">8-9</td><td>+2 em Força ou Destreza.</td></tr>
-            <tr><td class="center">10-11</td><td>1/dia, force teste de moral em criatura próxima (mesmo imune).</td></tr>
-            <tr><td class="center">12</td><td>Escolha uma opção ou +2 pontos de atributo.</td></tr>
+            <tr>
+                <th style="width:10%">2d6</th>
+                <th>Dádiva</th>
+            </tr>
+            <tr>
+                <td class="center">2</td>
+                <td>1/dia, teletransporte-se para um local distante que vê (movimento).</td>
+            </tr>
+            <tr>
+                <td class="center">3-7</td>
+                <td>+1 em ataques corpo a corpo ou à distância.</td>
+            </tr>
+            <tr>
+                <td class="center">8-9</td>
+                <td>+2 em Força ou Destreza.</td>
+            </tr>
+            <tr>
+                <td class="center">10-11</td>
+                <td>1/dia, force teste de moral em criatura próxima (mesmo imune).</td>
+            </tr>
+            <tr>
+                <td class="center">12</td>
+                <td>Escolha uma opção ou +2 pontos de atributo.</td>
+            </tr>
         </table>
 
         <h2>Deidades (Clérigos e Padres)</h2>
         <ul>
-            <li><strong>Saint Terragnis (Leal):</strong> Uma cavaleira lendária. Patrona dos guerreiros mais honrados.</li>
+            <li><strong>Saint Terragnis (Leal):</strong> Uma cavaleira lendária. Patrona dos guerreiros mais honrados.
+            </li>
             <li><strong>Gede (Neutro):</strong> O deus das festas, da cerveja e das canções.</li>
             <li><strong>Madeera (Leal):</strong> A Primeira Matriarca. Deusa da justiça e proteção.</li>
             <li><strong>Ord (Neutro):</strong> O Imortal, o sábio arcano. Deus da magia e segredos.</li>
             <li><strong>Memnon (Caótico):</strong> Um leão vermelho. Deus da força, poder e violência.</li>
             <li><strong>Shune (Caótico):</strong> A vil feiticeira. Deusa do fogo, desejo e manipulação.</li>
             <li><strong>Ramlaat (Caótico):</strong> O Pilar Místico. Deus dos mistérios da morte.</li>
-            <li><strong>The Lost (Caótico):</strong> O patrono daqueles que desaparecem, dos segredos esquecidos e do vazio entre os mundos. Adorado por párias e loucos.</li>
+            <li><strong>The Lost (Caótico):</strong> O patrono daqueles que desaparecem, dos segredos esquecidos e do
+                vazio entre os mundos. Adorado por párias e loucos.</li>
         </ul>
 
         <h2>Magias de Clérigo</h2>
-        
+
         <h3>Tier 1</h3>
         <div class="spell-list">
             <p><strong>Cura (Cure Wounds):</strong> Toque. Cura 1d6+metade do nível.</p>
@@ -835,7 +1658,7 @@
         </div>
 
         <h2>Magias de Mago</h2>
-        
+
         <h3>Tier 1</h3>
         <div class="spell-list">
             <p><strong>Mísseis Mágicos (Magic Missile):</strong> 1d4 dano inevitável. Vantagem no cast.</p>
@@ -908,16 +1731,16 @@
             <p><strong>Imobilizar Monstro (Hold Monster):</strong> Paralisa qualquer criatura.</p>
             <p><strong>Viagem Planar (Plane Shift):</strong> Teleporte para outro plano.</p>
             <p><strong>Palavra de Poder: Matar (Power Word Kill):</strong> Mata alvo com <9 níveis.</p>
-            <p><strong>Orbe Prismático (Prismatic Orb):</strong> Dano de energia variada (3d8).</p>
-            <p><strong>Vidência (Scrying):</strong> Espiona local à distância.</p>
-            <p><strong>Metamorfose (Shapechange):</strong> Vira qualquer criatura poderosa.</p>
-            <p><strong>Invocar Extraplanar (Summon Extraplanar):</strong> Traz aliado de outro mundo.</p>
-            <p><strong>Teleporte (Teleport):</strong> Viaja instantaneamente para local conhecido.</p>
-            <p><strong>Desejo (Wish):</strong> Altera a realidade. Cuidado.</p>
+                    <p><strong>Orbe Prismático (Prismatic Orb):</strong> Dano de energia variada (3d8).</p>
+                    <p><strong>Vidência (Scrying):</strong> Espiona local à distância.</p>
+                    <p><strong>Metamorfose (Shapechange):</strong> Vira qualquer criatura poderosa.</p>
+                    <p><strong>Invocar Extraplanar (Summon Extraplanar):</strong> Traz aliado de outro mundo.</p>
+                    <p><strong>Teleporte (Teleport):</strong> Viaja instantaneamente para local conhecido.</p>
+                    <p><strong>Desejo (Wish):</strong> Altera a realidade. Cuidado.</p>
         </div>
 
         <h2>Magias de Bruxa</h2>
-        
+
         <h3>Tier 1</h3>
         <div class="spell-list">
             <p><strong>Caldeirão (Cauldron):</strong> Repara item ou invoca sapo.</p>
@@ -986,4 +1809,5 @@
     </div>
 
 </body>
+
 </html>
