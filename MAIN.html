@@ -57,12 +57,13 @@
         }
 
         .class-title {
-            font-size: 12pt;
+            font-size: 18pt;
             font-weight: 700;
             margin: 0 0 5px 0;
             background-color: #eee;
             padding: 3px;
             border-left: 5px solid #333;
+            text-align: center;
         }
 
         .flavor-text {
@@ -72,15 +73,19 @@
             border-left: 2px solid #999;
             margin-bottom: 8px;
             text-align: justify;
-            font-size: 8.5pt;
+            font-size: 12pt;
         }
 
         .stats-row {
             font-weight: bold;
-            font-size: 8.5pt;
+            font-size: 11pt;
             margin-bottom: 5px;
             background: #e0e0e0;
             padding: 2px;
+        }
+        
+        .class-abilities {
+            font-size: 11pt;
         }
 
         ul {
@@ -96,7 +101,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 8pt;
+            font-size: 11pt;
             margin-top: 5px;
             background: #fff;
         }
@@ -154,7 +159,7 @@
             Sólido, especialista em algum tipo de arma e todas as armaduras. Uma combinação equilibrada entre ataque, defesa e dano. Seja com a força ou a agilidade você é um lutador nato, perito em um tipo de armas definido por você e sempre podendo confiar em seu escudo. Você pode carregar mais equipamento e tem maior habilidade em perícias do seu foco de ataque.
         </div>
         <div class="stats-row">Armas: Todas • Armadura: Todas + Escudos • PV: 1d8/nível</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Mestria com Arma:</strong> Escolha 1 arma. Ganha +1 atk/dano e +metade do nível (arredondado baixo).</li>
             <li><strong>Determinação (Grit):</strong> Escolha FOR ou DES. Vantagem em testes desse atributo.</li>
             <li><strong>Cargueiro:</strong> Adiciona mod. CON aos espaços de carga.</li>
@@ -207,8 +212,8 @@
         <div class="flavor-text">
             Um clássico solucionador de problemas, luta com astúcia, desvenda perigos e armadilhas. Você combate ardilosamente encontrando o ponto cego dos inimigos. Especializado em armas de destreza e em suas mãos rápidas é um excelente combatente se souber evitar os danos. Essencial em muitas masmorras porque é uma das poucas classes que pode desarmar armadilhas, muitas vezes poupando o grupo da morte certa.
         </div>
-        <div class="stats-row">Armas: Clava, Besta, Adaga, Arcos, Espadas Curtas • Armadura: Couro • PV: 1d4</div>
-        <ul>
+        <div class="stats-row">Armas: Clava, Besta, Adaga, Arco curto, Espadas Curtas • Armadura: Couro • PV: 1d4</div>
+        <ul class="class-abilities">
             <li><strong>Ataque Furtivo:</strong> +1 dado de dano se o inimigo não o vê. (+dado extra nv 2, 4, 6...).</li>
             <li><strong>Ladinagem:</strong> Vantagem (DES) p/ furtividade, bater carteira, trancas e armadilhas.</li>
         </ul>
@@ -224,7 +229,7 @@
         
         <table>
             <tr><th style="width:10%">2d6</th><th>Talento</th></tr>
-            <tr><td class="center">2</td><td>Vantagem em Iniciativa.</td></tr>
+            <tr><td class="center">2</td><td>Vantagem em Iniciativa. Rerola se igual</td></tr>
             <tr><td class="center">3-6</td><td>Ataque Furtivo causa +1 dado de dano.</td></tr>
             <tr><td class="center">7-9</td><td>+2 no atributo Força, Destreza ou Carisma.</td></tr>
             <tr><td class="center">10-11</td><td>+1 em ataques corpo a corpo e à distância.</td></tr>
@@ -238,13 +243,12 @@
         <div class="flavor-text">
             Guerreiro divino com habilidades em combate e exorcismo, protege aliados das forças do mal. Com o atributo secundário na força ou destreza e proficiência em todas as armaduras e escudos você é um combatente capaz. Além de conjurar magias divinas, é temível numa luta e pode manter o grupo vivo por mais tempo. Você deve escolher uma deidade entre as disponíveis e seguir os seus preceitos e alinhamentos.
         </div>
-        <div class="stats-row">Armas: Clava, Besta, Adaga, Maça, Espada Longa, Martelo • Armadura: Todas • PV: 1d6</div>
-        <ul>
+        <div class="stats-row">Armas: Clava, Besta, Adaga, Maça, Espada Longa, Martelo, Bastão • Armadura: Todas + Escudos • PV: 1d6</div>
+        <ul class="class-abilities">
             <li><strong>Expulsar Mortos-Vivos:</strong> Conhece a magia automaticamente (não conta no limite).</li>
             <li><strong>Divindade:</strong> Escolha um deus. Símbolo sagrado necessário para conjurar.</li>
             <li><strong>Conjuração:</strong> Magias de Clérigo (Ver Apêndice).</li>
         </ul>
-
          <table>
             <tr><th colspan="4">Títulos de Clérigo</th></tr>
             <tr><td class="center">1-2</td><td>Acólito</td><td>Iniciado</td><td>Buscador</td></tr>
@@ -262,6 +266,103 @@
             <tr><td class="center">10-11</td><td>+2 no atributo Força ou Sabedoria.</td></tr>
             <tr><td class="center">12</td><td>Escolha um talento ou +2 pontos de atributo.</td></tr>
         </table>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="6">Magias de Clérigo</th>
+            </tr>
+            <tr>
+                <th>Level</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1</strong></td>
+                <td>2</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>2</strong></td>
+                <td>3</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>3</strong></td>
+                <td>3</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>4</strong></td>
+                <td>3</td>
+                <td>2</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>5</strong></td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>6</strong></td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>7</strong></td>
+                <td>3</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>8</strong></td>
+                <td>3</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>9</strong></td>
+                <td>3</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><strong>10</strong></td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
     </div>
 
     <!-- 6. CLÉRIGO (PADRE) -->
@@ -280,7 +381,7 @@
             Conjurador arcano, dominante das artes místicas, cria itens mágicos. Não importa se você aprendeu numa universidade de magia secreta, se foi escolhido por uma seita arcana ou se simplesmente nasceu desse jeito, você tem poderes que lhe permitem dobrar a realidade. Limitados apenas pelas suas próprias habilidades, os magos podem ser uma fonte ilimitada de dano, controle e suporte. Evite dano e mantenha sempre um punhal consigo caso cheguem perto demais de você.
         </div>
         <div class="stats-row">Armas: Adaga, Cajado • Armadura: Nenhuma • PV: 1d4</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Aprender Magias:</strong> Pode aprender de pergaminhos (1 dia estudo, Teste INT CD 15).</li>
             <li><strong>Conjuração:</strong> Começa com 3 magias de Tier 1.</li>
         </ul>
@@ -329,13 +430,13 @@
             Guerreiro místico apadrinhado por uma entidade extra-planar. Algo aconteceu com você em algum momento da sua vida que fez com que uma entidade extra-planar onipoderosa se afeiçoar por sua pessoa e essa força lhe dá poderes, à custa de favores que muitas vezes você não compreende. Seja como um espadachim blindado pelo sobrenatural ou um enganador guiado por uma força sinistra, seus poderes lhe dão vantagens em várias situações, dependendo das suas escolhas. Capaz de um número seleto de armas, armaduras médias e escudos, você é um combatente excelente.
         </div>
         <div class="stats-row">Armas: Clava, Besta, Adaga, Maça, Espada • Armadura: Couro, Malha, Escudo • PV: 1d6</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Patrono:</strong> Fonte de poder. Inicia com uma <em>Dádiva do Patrono</em>.</li>
             <li><strong>Dádiva:</strong> Sempre que ganha um talento, pode rolar na tabela de Patrono (ver Apêndice) ao invés da tabela de classe.</li>
         </ul>
         
         <table>
-            <tr><th colspan="4">Títulos de Bruxo</th></tr>
+            <tr><th colspan="4">Títulos de Warlock</th></tr>
             <tr><td class="center">1-2</td><td>Favorecido</td><td>Marcado</td><td>Escolhido</td></tr>
             <tr><td class="center">3-4</td><td>Arauto</td><td>Fanático</td><td>Canalizador</td></tr>
             <tr><td class="center">5-6</td><td>Eminente</td><td>Ocultista</td><td>Profetizado</td></tr>
@@ -360,7 +461,7 @@
             Especialista em combate, táticas de grupo. mitigar dano e sobrepujar a morte certa. Seja nos becos do submundo, na grade de alguma arena sinistra ou no glorioso coliseu, você aprendeu a lutar e sobreviver, melhor que isso, sabe fazer isso de forma espetacular. Podendo emular qualquer set de armas do gladiador clássico e sendo capaz de resistir a danos terríveis, muitas vezes vão achar que você está morto quando na verdade está pronto para levantar de novo e ouvir os gritos da torcida.
         </div>
         <div class="stats-row">Armas: Todas • Armadura: Couro, Escudos • PV: 1d8</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Última Resistência:</strong> Levanta com 1 PV se tirar 18-20 no teste de morte.</li>
             <li><strong>Incansável (3/dia):</strong> CD 18 CON para ficar com 1 PV ao cair a 0.</li>
             <li><strong>Floreio (3/dia):</strong> Recupera 1d6 PV ao acertar ataque corpo a corpo.</li>
@@ -382,7 +483,7 @@
             Poderes e armas das sombras, teleporte, técnicas especiais únicas. Sua existência é um clichê, você foi treinado desde a mais tenra infância pelo seu clã, família ou máfia (muitas vezes tudo isso junto) em ser uma sombra, o dominante do subterfúgio, aquele que caminha no jardim. Mesmo com todo o treinamento e as armas clássicas cada ninja carrega consigo um conjunto de técnicas especiais que só ele domina e desenvolve com o tempo, tornando cada um único e mortal.
         </div>
         <div class="stats-row">Armas: Zarabatana, Boleadeira, Adaga, Corrente, Cimitarra, Shuriken • PV: 1d6</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Assassinato:</strong> Dobro de dano em alvos surpresos.</li>
             <li><strong>Passo de Fumaça (3/dia):</strong> Teleporte curto (ação livre).</li>
             <li><strong>Lótus Negra:</strong> Inicia com um talento da tabela Lótus Negra.</li>
@@ -421,7 +522,7 @@
             Navegador, manobras com escudos, juramento aos deuses antigos dão bônus diários. Não importa se você é um nórdico violento, um guerreiro helênico de tanga ou um canibal alucinado, sua comunidade original depende de duas coisas, barcos e escudos - e você é mestre nas duas. Acostumado a viver nauticamente, você está em casa em qualquer barco ou canoa. Domina o escudo como a mão esquerda e pode manter-se como uma parede diante do perigo. Por último e não menos especial, diariamente faz juramento aos seus deuses pagãos, podendo ganhar vantagens em combate, sorte ou ardilosidade.
         </div>
         <div class="stats-row">Armas: Adaga, Machados, Arco Longo, Espada, Lança • Armadura: Couro, Malha, Escudo • PV: 1d8</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Parede de Escudos:</strong> Ação para ter CA 20 (com escudo).</li>
             <li><strong>Deuses Antigos (Escolha 1/dia):</strong>
                 <br><em>Odin:</em> Cura 1d4 ao matar.
@@ -456,7 +557,7 @@
             Explorador, sobrevivente, especialista em natureza, fabrica poções com ervas. Senhor da selva, sua capacidade de combate é excelente mas incomparável em ambiente natural. Adepto da agilidade e da astúcia pode ser fatal a qualquer distância. Seus conhecimentos permitem misturar ervas e criar unguentos capazes de curar e criar diversos efeitos. Excelente com o arco ou qualquer arma de destreza, boa resistência e dano moderado.
         </div>
         <div class="stats-row">Armas: Adaga, Arcos, Espadas, Lança, Cajado • Armadura: Couro, Malha • PV: 1d8</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Desbravador:</strong> Vantagem em navegação, rastreio e sobrevivência.</li>
             <li><strong>Herbalismo (Teste INT):</strong>
                 <br><em>CD 11 Bálsamo:</em> Cura 1 PV.
@@ -483,7 +584,7 @@
             Assume gradativamente forma animal, ataques ferais e resistência sobrenatural. Não se sabe se você descende de um druida, um licantropo ou alguma espécie de fera inumana. O que importa é que não muito depois de se tornar um jovem seu corpo começou a mudar e sua própria natureza selvagem o convocou para aventura. Você é capaz de mudar de forma e realizar ataques trucidantes, além disso, seus sentidos animais e poderes fisiológicos vão se desenvolvendo conforme sobe de nível. São excelentes arremessadores resultado dos sentidos aguçados.
         </div>
         <div class="stats-row">Armas: Distância • Armadura: Couro, Malha, Escudos • PV: 1d8</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Ataque da Fera:</strong> Escolha 1 tipo (Lobo 1d6+, Urso 1d8+, Cobra 1d4+Veneno).</li>
             <li><strong>Forma de Fera:</strong> 1/dia, transforma-se na fera (3 rodadas). Ganha stats da fera.</li>
             <li><strong>Pele de Fera:</strong> Soma CON à CA.</li>
@@ -505,7 +606,7 @@
             Ataques ardilosos, disfarces, venenos, matar sem ser visto. Diferente do ladrão, que é essencialmente um explorador e o ninja que é um artista marcial, o assassino é um especialista na morte. Você pode ser o saltador de telhados, a pior carona possível ou a dançarina fatal, não importando a sua origem ou método, o seu hábito é garantir que o seu alvo morra, de preferência sem nem saber disso. Cogite essa classe se o seu ladrão ou ninja na verdade é um tremendo enganador carismático.
         </div>
         <div class="stats-row">Armas: Clava, Besta, Adaga, Espada Curta, Lança • Armadura: Couro, Malha • PV: 1d6</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Ataque Furtivo:</strong> Dano extra em alvo não ciente (+1 dado a cada 2 níveis).</li>
             <li><strong>Veneno:</strong> Aplica veneno (3 rodadas). Próximo ataque +1d4 dano.</li>
         </ul>
@@ -526,7 +627,7 @@
             Caçador, companhia animal do mesmo nível, domínio sobre feras, faz armadilhas. Você é um guerreiro que se sente melhor entre os animais do que com outras pessoas. Com consequência disso tem sempre um companheiro animal do mesmo nível que o seu e pode trocar por outros ao longo do tempo. Você é acostumado a viver em ambiente selvagem e lidar com seus habitantes, sabendo lidar com cada tipo de animal, podendo inclusive domesticá-los, sendo essencial para lidar com montarias ou grande feras, além disso, pode fazer armadilhas, não importando o alvo.
         </div>
         <div class="stats-row">Armas: Clava, Adaga, Machado Grande, Maça, Lança • PV: 1d8</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Afinidade:</strong> Teste de CAR para acalmar/domar feras.</li>
             <li><strong>Armadilhas:</strong> Cria armadilha de tropeço (1d4 dano).</li>
         </ul>
@@ -547,7 +648,7 @@
             Petrificador, resistente a dano, pele de pedra “das cavernas”. Você veio de outro povo, talvez de um lugar distante, quem sabe de outro tempo. Não há como saber se algum antepassado seu foi amaldiçoado, se um dos elementais antigos fez parte da sua vida ou se de alguma forma seu sangue seja diferente, talvez tenha só nascido perto de um vulcão ou no meio de um terremoto. O que importa é que assim como o da medusa, o seu olhar pode paralisar os seres, seu sangue é mais denso, resistente a venenos e sua pele é blindada. Esses guerreiros costumam evitar a civilização por completo ou ainda vir de uma origem ainda mais exótica e dominam técnicas de fabricação de armas de obsidianas, frágeis se comparadas com o aço mas afiadíssimas. Desprezam qualquer tipo de armaduras e muitas vezes são vistos semi-nus enquanto paralisam seus oponentes surpresos.
         </div>
         <div class="stats-row">Armas: Bumerangue, Clava, Adaga, Lança • Armadura: Nenhuma • PV: 1d8</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Olhar Petrificante:</strong> CD 15 CON ou petrifica por 1d4 rodadas.</li>
             <li><strong>Pele de Pedra:</strong> CA = 12 + metade do nível. Vantagem furtividade natural.</li>
         </ul>
@@ -568,7 +669,7 @@
             Arcanista que domina os mortos-vivos e os caminhos da morte. Você estudou as artes proibidas e seus segredos sinistros. Essencialmente um mago que além do conhecimento secreto, sabe encantar os mortos, tornando-os seus lacaios, além de contar com sua fiel maça, sacrificar a ética por conhecimento também o habilitou a decifrar os códigos secretos podendo, aprender feitiços que encontrar pelo caminho sem precisar do tempo que um conjurador tradicional teria.
         </div>
         <div class="stats-row">Armas: Adaga, Maça, Cajado • Armadura: Nenhuma • PV: 1d4</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Comandar Mortos-Vivos:</strong> Teste CAR vs CD 10+Nível para controlar.</li>
             <li><strong>Estudo:</strong> Aprende pergaminhos permanentemente (INT CD 15).</li>
         </ul>
@@ -589,7 +690,7 @@
             Uma guerreira abençoada com acesso a magias divinas e familiares auxiliares. Diferente de um clérigo tradicional, você é uma amazona que depois de nascer, de uma grande batalha ou de uma experiência de quase morte foi abençoada pela deusa da guerra. Além de ser capaz de usar todas as armas, escudos e armaduras depois do terceiro nível você aprende encantamentos de clérigo. Possui um familiar voador místico que pode ajudar com mensagens e combate, multiplicando por cada nível. Você não se comunica diretamente com a deusa mas a sua presença pode ser sentida nos momentos mais precisos.
         </div>
         <div class="stats-row">Armas: Todas • Armadura: Todas • PV: 1d8</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Corvo:</strong> Tem familiares corvos (1 por nível). Batedores frágeis.</li>
             <li><strong>Magias:</strong> Conjura como Clérigo a partir do nível 3.</li>
         </ul>
@@ -605,18 +706,18 @@
 
     <!-- 21. BRUXA -->
     <div class="class-block">
-        <div class="class-title">21. Bruxa</div>
+        <div class="class-title">21. Witch</div>
         <div class="flavor-text">
             Conjuradora de forças diabólicas, fabrica poções, companheiro familiar, maldições. Da mesma forma que um clérigo você tem uma deidade que lhe empresta os poderes esse tipo de conjurador faz o mesmo com entidades diabólicas. Pode fabricar poções que curam ou envenenam, mediante concentração, pode atrapalhar completamente as ações de um adversário. Apesar de não ser tão resistente como um clérigo conta com armadura média e uma boa quantidade de armas como opções.
         </div>
         <div class="stats-row">Armas: Clava, Besta, Adaga, Espada Curta, Cajado • PV: 1d4</div>
-        <ul>
+        <ul class="class-abilities">
             <li><strong>Preparar Poção (No descanso):</strong> Cria Cura (1d4) ou Veneno (1d8 ingerido/1d2 arma).</li>
             <li><strong>Maldição:</strong> Foco para dar desvantagem a um inimigo.</li>
         </ul>
         
         <table class="titles-table">
-            <tr><th colspan="4">Títulos de Bruxa</th></tr>
+            <tr><th colspan="4">Títulos de Witch</th></tr>
             <tr><td class="center">1-2</td><td>Cartomante</td><td>Sussurrador</td><td>Xamã</td></tr>
             <tr><td class="center">3-4</td><td>Vidante</td><td>Amaldiçoador</td><td>Conjurador</td></tr>
             <tr><td class="center">5-6</td><td>Profeta</td><td>Megera</td><td>Adivinho</td></tr>
@@ -651,8 +752,8 @@
         </div>
 
         <div class="class-block">
-            <h3>Acidentes Diabólicos (Bruxo/Bruxa) (d12)</h3>
-            <p>Se um Bruxo ou Bruxa tirar "1" natural ao conjurar:</p>
+            <h3>Acidentes Diabólicos (Warlock/Witch) (d12)</h3>
+            <p>Se um Warlock ou Witch tirar "1" natural ao conjurar:</p>
             <table>
                 <tr><th width="10%">d12</th><th>Efeito (Tier 1-2)</th><th>Efeito (Tier 3-4)</th></tr>
                 <tr><td class="center">1</td><td><strong>Diabrura!</strong> Role duas vezes.</td><td><strong>Maelstrom!</strong> Role duas vezes.</td></tr>
@@ -702,8 +803,8 @@
             <p><strong>Voz da Verdade:</strong> Obriga criatura a falar a verdade.</p>
         </div>
 
-        <h2>Patronos do Bruxo & Dádivas (2d6)</h2>
-        <p class="flavor-text">O Bruxo não rola talentos normais; ele rola na tabela do seu Patrono.</p>
+        <h2>Patronos do Warlock & Dádivas (2d6)</h2>
+        <p class="flavor-text">O Warlock não rola talentos normais; ele rola na tabela do seu Patrono.</p>
 
         <h3>Almazzat</h3>
         <p>Um arqui-demônio com cabeça de lobo, seis olhos e seis chifres. Busca as Areias das Eras.</p>
@@ -917,7 +1018,7 @@
             <p><strong>Desejo (Wish):</strong> Altera a realidade. Cuidado.</p>
         </div>
 
-        <h2>Magias de Bruxa</h2>
+        <h2>Magias de Witch</h2>
         
         <h3>Tier 1</h3>
         <div class="spell-list">
