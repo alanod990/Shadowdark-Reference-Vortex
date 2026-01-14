@@ -18,6 +18,9 @@
             color: #111;
             background: white;
             margin: 0;
+            margin: 0 auto;
+            max-width: 1000px;
+            padding: 0 20px;
         }
 
         h1 {
@@ -97,7 +100,50 @@
             margin-top: 2px;
         }
 
+        /* Menu de Navegação */
+        nav {
+            background-color: #333;
+            padding: 0;
+            margin: -20px -20px 20px -20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 11pt;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        nav a.active {
+            background-color: #666;
+            border-bottom: 3px solid #fff;
+        }
+
         @media print {
+            nav { display: none; }
             h3 { page-break-after: avoid; }
             table { page-break-inside: avoid; }
             .rules-box { page-break-inside: avoid; }
@@ -105,6 +151,12 @@
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Guia de Classes</a></li>
+            <li><a href="equipamentos.html" class="active">Equipamentos</a></li>
+        </ul>
+    </nav>
 
     <h1>Guia de Equipamentos</h1>
 
@@ -137,6 +189,18 @@
             <tr><td>Martelo de Guerra</td><td class="cost">10 gp</td><td class="center">1d10</td><td>2 Mãos</td></tr>
         </tbody>
     </table>
+
+    <div class="rules-box">
+        <strong>Propriedades das Armas (Core Rulebook):</strong>
+        <ul>
+            <li><strong>Finesse (F):</strong> Você pode usar seu modificador de Força ou Destreza ao fazer ataques com esta arma.</li>
+            <li><strong>Recarga (Loading):</strong> Você deve usar seu movimento para recarregar esta arma antes de poder dispará-la novamente.</li>
+            <li><strong>Arremesso (Thrown):</strong> Você pode arremessar esta arma para fazer um ataque à distância (usando Força ou Destreza). O alcance é listado (Perto ou Longe).</li>
+            <li><strong>2 Mãos (2H):</strong> Você deve usar as duas mãos para empunhar esta arma eficazmente.</li>
+            <li><strong>Versátil (V):</strong> Você pode usar esta arma com uma ou duas mãos. Se usar as duas mãos, use o dado de dano maior listado (ex: 1d10 em vez de 1d8).</li>
+            <li><strong>Distância (Range):</strong> A arma pode atingir alvos até a distância especificada (Perto ou Longe) sem penalidade.</li>
+        </ul>
+    </div>
 
     <!-- ARMAS DOS SCROLLS -->
     <h2>Armas Exóticas & Regionais</h2>
@@ -173,11 +237,14 @@
     </table>
 
     <div class="rules-box">
-        <strong>Propriedades Especiais:</strong>
+        <strong>Propriedades Especiais (Cursed Scrolls):</strong>
         <ul>
             <li><strong>Ferro Frio (Cold Iron):</strong> Armas normais forjadas a frio (custo x2). Dano normal, mas eficaz contra fadas/demônios em <em>CS#1 Diablerie</em>.</li>
-            <li><strong>Obsidiana:</strong> Armas de vidro vulcânico são muito afiadas (Crítico 19-20) mas quebram se tirar "1" natural no ataque.</li>
-            <li><strong>Trip (Derrubar):</strong> Pode substituir dano por derrubar alvo (teste FOR/DES).</li>
+            <li><strong>Obsidiana (Obsidian):</strong> Armas de vidro vulcânico são muito afiadas (Crítico 19-20) mas quebram se tirar "1" natural no ataque.</li>
+            <li><strong>Derrubar (Trip):</strong> Você pode escolher substituir o dano desta arma por uma tentativa de derrubar o alvo (contested STR/DEX check).</li>
+            <li><strong>Quebrar Escudos (Shield Breaker):</strong> Se o alvo estiver usando um escudo, o dano excedente a CA destrói o escudo (se o mestre permitir).</li>
+            <li><strong>Retorno (Returning):</strong> Se você errar um ataque à distância, a arma retorna para a sua mão (ou pode ser puxada de volta pela corda no caso do arpão).</li>
+            <li><strong>Alcance (Reach):</strong> Você pode atacar inimigos a até 10 pés (3m) de distância.</li>
         </ul>
     </div>
 
@@ -203,6 +270,15 @@
             <tr><td>Armadura de Ossos</td><td class="cost">15 gp</td><td class="slots">1</td><td class="center">11 + DES</td><td>Intimidação (Vantagem) <span class="source-tag">CS#4</span></td></tr>
         </tbody>
     </table>
+
+    <div class="rules-box">
+        <strong>Propriedades das Armaduras:</strong>
+        <ul>
+            <li><strong>Desvantagem (Disadv):</strong> Você tem desvantagem em testes de Furtividade (Stealth) e Nadar (Swim) usando esta armadura.</li>
+            <li><strong>Sem Nadar (No Swim):</strong> Você não consegue nadar enquanto usa esta armadura; você afunda.</li>
+            <li><strong>Mithral:</strong> Armaduras de metal podem ser feitas de Mithral (custo x4). Elas pesam 1 slot a menos e não impõem penalidades de Furtividade/Nadar.</li>
+        </ul>
+    </div>
 
     <!-- EQUIPAMENTO -->
     <h2>Equipamento de Aventura & Sobrevivência</h2>
