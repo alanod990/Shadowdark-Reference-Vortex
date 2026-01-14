@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia de Equipamentos Shadowdark (A5)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+        @page {
+            size: A5;
+            margin: 1cm;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            font-size: 10.5pt; /* Aumentado de 9pt para 10.5pt (~17%) */
+            line-height: 1.25;
+            color: #111;
+            background: white;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 18.7pt; /* Aumentado proporcionalmente */
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 14pt; /* Aumentado proporcionalmente */
+            border-bottom: 1px solid #666;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            font-size: 11.7pt; /* Aumentado proporcionalmente */
+            font-weight: bold;
+            background-color: #eee;
+            padding: 2px 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-left: 3px solid #444;
+            page-break-after: avoid;
+        }
+
+        /* Tabelas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10pt; /* Aumentado de 8.5pt para 10pt */
+            margin-top: 5px;
+            background: #fff;
+            page-break-inside: avoid;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 2px 4px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .center { text-align: center; }
+        .cost { text-align: right; width: 45px; } /* Largura ajustada */
+        .slots { text-align: center; width: 35px; } /* Largura ajustada */
+
+        /* Regras e Notas */
+        .rules-box {
+            border: 1px dashed #666;
+            background-color: #fafafa;
+            padding: 5px;
+            margin-top: 10px;
+            font-size: 10pt; /* Aumentado de 8.5pt para 10pt */
+            page-break-inside: avoid;
+        }
+
+        ul { margin: 5px 0; padding-left: 15px; }
+        li { margin-bottom: 2px; }
+        strong { font-weight: 700; }
+        
+        .source-tag {
+            font-size: 8.2pt; /* Aumentado de 7pt para 8.2pt */
+            color: #666;
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+        }
+
+        @media print {
+            h3 { page-break-after: avoid; }
+            table { page-break-inside: avoid; }
+            .rules-box { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guia de Equipamentos</h1>
+
+    <!-- ARMAS BÁSICAS -->
+    <h2>Armas Básicas (Core Rulebook)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Arma</th>
+                <th>Custo</th>
+                <th>Dano</th>
+                <th>Propriedades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Adaga (Dagger)</td><td class="cost">1 gp</td><td class="center">1d4</td><td>Finesse, Arremesso (Perto)</td></tr>
+            <tr><td>Arco Curto (Shortbow)</td><td class="cost">6 gp</td><td class="center">1d4</td><td>2 Mãos, Distância (Longe)</td></tr>
+            <tr><td>Arco Longo (Longbow)</td><td class="cost">8 gp</td><td class="center">1d8</td><td>2 Mãos, Distância (Longe)</td></tr>
+            <tr><td>Azagaia (Javelin)</td><td class="cost">5 sp</td><td class="center">1d4</td><td>Arremesso (Longe)</td></tr>
+            <tr><td>Besta (Crossbow)</td><td class="cost">8 gp</td><td class="center">1d6</td><td>2 Mãos, Recarga, Dist. (Longe)</td></tr>
+            <tr><td>Cajado (Staff)</td><td class="cost">5 sp</td><td class="center">1d4</td><td>2 Mãos, Versátil (1d4)</td></tr>
+            <tr><td>Clava (Club)</td><td class="cost">5 cp</td><td class="center">1d4</td><td>-</td></tr>
+            <tr><td>Espada Bastarda</td><td class="cost">10 gp</td><td class="center">1d8</td><td>Versátil (1d10), 2 Slots</td></tr>
+            <tr><td>Espada Curta</td><td class="cost">7 gp</td><td class="center">1d6</td><td>-</td></tr>
+            <tr><td>Espada Grande</td><td class="cost">12 gp</td><td class="center">1d12</td><td>2 Mãos, 2 Slots</td></tr>
+            <tr><td>Espada Longa</td><td class="cost">9 gp</td><td class="center">1d8</td><td>Versátil (1d10 se usar 2 mãos)</td></tr>
+            <tr><td>Lança (Spear)</td><td class="cost">5 sp</td><td class="center">1d6</td><td>Arremesso (Perto), Versátil (1d8)</td></tr>
+            <tr><td>Maça (Mace)</td><td class="cost">5 gp</td><td class="center">1d6</td><td>-</td></tr>
+            <tr><td>Machado Grande</td><td class="cost">10 gp</td><td class="center">1d8</td><td>Versátil (1d10), 2 Slots</td></tr>
+            <tr><td>Martelo de Guerra</td><td class="cost">10 gp</td><td class="center">1d10</td><td>2 Mãos</td></tr>
+        </tbody>
+    </table>
+
+    <!-- ARMAS DOS SCROLLS -->
+    <h2>Armas Exóticas & Regionais</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Arma</th>
+                <th>Custo</th>
+                <th>Dano</th>
+                <th>Propriedades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- CS 2: RED SANDS (Deserto) -->
+            <tr><td>Boleadeira (Bolas)</td><td class="cost">2 gp</td><td class="center">-</td><td>Sem dano. Prende alvo. <span class="source-tag">CS#2 Red Sands</span></td></tr>
+            <tr><td>Cimitarra (Scimitar)</td><td class="cost">10 gp</td><td class="center">1d6</td><td>Finesse. <span class="source-tag">CS#2 Red Sands</span></td></tr>
+            <tr><td>Corrente Navalha</td><td class="cost">10 gp</td><td class="center">1d8</td><td>2 Mãos, Alcance. <span class="source-tag">CS#2 Red Sands</span></td></tr>
+            <tr><td>Katar</td><td class="cost">5 gp</td><td class="center">1d4</td><td>Finesse, Crítico 19-20. <span class="source-tag">CS#2 Red Sands</span></td></tr>
+            <tr><td>Khopesh</td><td class="cost">8 gp</td><td class="center">1d6</td><td>Versátil (1d8), Trip (Derrubar). <span class="source-tag">CS#2 Red Sands</span></td></tr>
+            <tr><td>Shuriken (5)</td><td class="cost">1 gp</td><td class="center">1d4</td><td>Finesse, Arremesso (Perto). <span class="source-tag">CS#2 Red Sands</span></td></tr>
+            <tr><td>Zarabatana</td><td class="cost">5 gp</td><td class="center">1</td><td>Distância (Perto), Recarga. <span class="source-tag">CS#2 Red Sands</span></td></tr>
+
+            <!-- CS 3: MIDNIGHT SUN (Viking/Gelo) -->
+            <tr><td>Machado Dinamarquês</td><td class="cost">15 gp</td><td class="center">1d10</td><td>2 Mãos, Quebrar Escudos. <span class="source-tag">CS#3 Midnight Sun</span></td></tr>
+            <tr><td>Seax (Faca Longa)</td><td class="cost">5 gp</td><td class="center">1d6</td><td>Finesse, Leve. <span class="source-tag">CS#3 Midnight Sun</span></td></tr>
+            <tr><td>Arpão</td><td class="cost">2 gp</td><td class="center">1d6</td><td>Arremesso (Perto), Retorno (Corda). <span class="source-tag">CS#3 Midnight Sun</span></td></tr>
+
+            <!-- CS 4: RIVER OF NIGHT (Selva) -->
+            <tr><td>Bumerangue</td><td class="cost">1 gp</td><td class="center">1d4</td><td>Arremesso (Perto), Retorna. <span class="source-tag">CS#4 River of Night</span></td></tr>
+            <tr><td>Lançador de Lança</td><td class="cost">5 gp</td><td class="center">esp.</td><td>Duplica alcance de azagaias/lanças. <span class="source-tag">CS#4 River of Night</span></td></tr>
+            <tr><td>Machete</td><td class="cost">2 gp</td><td class="center">1d6</td><td>Vantagem cortar vegetação. <span class="source-tag">CS#4 River of Night</span></td></tr>
+            <tr><td>Macuahuitl</td><td class="cost">15 gp</td><td class="center">1d8</td><td>Versátil (1d10), Obsidiana (Quebra 1). <span class="source-tag">CS#4 River of Night</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="rules-box">
+        <strong>Propriedades Especiais:</strong>
+        <ul>
+            <li><strong>Ferro Frio (Cold Iron):</strong> Armas normais forjadas a frio (custo x2). Dano normal, mas eficaz contra fadas/demônios em <em>CS#1 Diablerie</em>.</li>
+            <li><strong>Obsidiana:</strong> Armas de vidro vulcânico são muito afiadas (Crítico 19-20) mas quebram se tirar "1" natural no ataque.</li>
+            <li><strong>Trip (Derrubar):</strong> Pode substituir dano por derrubar alvo (teste FOR/DES).</li>
+        </ul>
+    </div>
+
+    <!-- ARMADURAS -->
+    <h2>Armaduras (Armor)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Armadura</th>
+                <th>Custo</th>
+                <th>Slots</th>
+                <th>CA (AC)</th>
+                <th>Propriedades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Couro (Leather)</td><td class="cost">10 gp</td><td class="slots">1</td><td class="center">11 + DES</td><td>-</td></tr>
+            <tr><td>Cota de Malha</td><td class="cost">60 gp</td><td class="slots">2</td><td class="center">13 + DES</td><td>Desv. Furtividade/Nadar</td></tr>
+            <tr><td>Placas (Plate)</td><td class="cost">130 gp</td><td class="slots">3</td><td class="center">15</td><td>Sem Nadar, Desv. Furtividade</td></tr>
+            <tr><td>Escudo (Shield)</td><td class="cost">10 gp</td><td class="slots">1</td><td class="center">+2</td><td>Ocupa 1 mão</td></tr>
+            <tr><td>Mithral (Metal)</td><td class="cost">x4</td><td class="slots">-1</td><td class="center">-</td><td>Remove penalidades</td></tr>
+            <tr><td>Pele de Urso</td><td class="cost">20 gp</td><td class="slots">2</td><td class="center">12 + DES</td><td>Resistência ao Frio <span class="source-tag">CS#3</span></td></tr>
+            <tr><td>Armadura de Ossos</td><td class="cost">15 gp</td><td class="slots">1</td><td class="center">11 + DES</td><td>Intimidação (Vantagem) <span class="source-tag">CS#4</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- EQUIPAMENTO -->
+    <h2>Equipamento de Aventura & Sobrevivência</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Custo</th>
+                <th>Slots</th>
+                <th>Notas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Core & Companion -->
+            <tr><td>Arpéu (Grappling Hook)</td><td class="cost">1 gp</td><td class="slots">1</td><td>Com corda, ancora em superfícies.</td></tr>
+            <tr><td>Caltrops (Bolsa)</td><td class="cost">5 sp</td><td class="slots">1</td><td>1 dano e 1/2 movimento ao pisar.</td></tr>
+            <tr><td>Corda (60 pés/18m)</td><td class="cost">1 gp</td><td class="slots">1</td><td>Cânhamo resistente.</td></tr>
+            <tr><td>Corrente (10 pés/3m)</td><td class="cost">10 gp</td><td class="slots">1</td><td>Ferro pesado.</td></tr>
+            <tr><td>Espelho Pequeno</td><td class="cost">10 gp</td><td class="slots">1</td><td>Olhar esquinas/Medusas.</td></tr>
+            <tr><td>Esquiro (Flint/Steel)</td><td class="cost">5 sp</td><td class="slots">1</td><td>Acende fogo (ação).</td></tr>
+            <tr><td>Ferramentas Ladrão</td><td class="cost">25 gp</td><td class="slots">1</td><td>Necessário para abrir trancas.</td></tr>
+            <tr><td>Lampião (Lantern)</td><td class="cost">5 gp</td><td class="slots">1</td><td>Ilumina dist. "Longe". Requer óleo.</td></tr>
+            <tr><td>Mochila (Backpack)</td><td class="cost">2 gp</td><td class="slots">0</td><td>Necessária para carregar itens.</td></tr>
+            <tr><td>Óleo (Frasco)</td><td class="cost">5 sp</td><td class="slots">1</td><td>Combustível (1h) ou Queimar (1d4).</td></tr>
+            <tr><td>Pé de Cabra</td><td class="cost">5 sp</td><td class="slots">1</td><td>Vantagem para forçar portas.</td></tr>
+            <tr><td>Pitons (10)</td><td class="cost">1 gp</td><td class="slots">1</td><td>Espigos de ferro para escalar/prender.</td></tr>
+            <tr><td>Rações (3)</td><td class="cost">5 sp</td><td class="slots">1</td><td>Comida seca. 1 dia = 1 ração.</td></tr>
+            <tr><td>Tocha</td><td class="cost">5 sp</td><td class="slots">1</td><td>Ilumina dist. "Perto". Dura 1 hora.</td></tr>
+            <tr><td>Vara (10 pés/3m)</td><td class="cost">5 sp</td><td class="slots">1</td><td>Madeira. Ativa armadilhas.</td></tr>
+            
+            <!-- CS#2 Red Sands -->
+            <tr><td>Cantil de Camelo</td><td class="cost">5 gp</td><td class="slots">1</td><td>Guarda 10 doses de água. <span class="source-tag">CS#2</span></td></tr>
+            <tr><td>Tenda de Areia</td><td class="cost">10 gp</td><td class="slots">2</td><td>Protege contra tempestade de areia. <span class="source-tag">CS#2</span></td></tr>
+            <tr><td>Destilador Solar</td><td class="cost">15 gp</td><td class="slots">1</td><td>Gera 1 dose água/dia no deserto. <span class="source-tag">CS#2</span></td></tr>
+
+            <!-- CS#3 Midnight Sun -->
+            <tr><td>Esquis (Skis)</td><td class="cost">5 gp</td><td class="slots">1</td><td>Move normal na neve. <span class="source-tag">CS#3</span></td></tr>
+            <tr><td>Sapatos de Neve</td><td class="cost">2 gp</td><td class="slots">1</td><td>Move normal na neve fofa. <span class="source-tag">CS#3</span></td></tr>
+            <tr><td>Kit de Pesca</td><td class="cost">1 gp</td><td class="slots">1</td><td>Vantagem para pescar comida. <span class="source-tag">CS#3</span></td></tr>
+            <tr><td>Pelego (Furs)</td><td class="cost">10 gp</td><td class="slots">1</td><td>Necessário contra frio extremo. <span class="source-tag">CS#3</span></td></tr>
+
+            <!-- CS#4 River of Night -->
+            <tr><td>Repelente Insetos</td><td class="cost">2 gp</td><td class="slots">1</td><td>Dura 1 dia. Evita febre. <span class="source-tag">CS#4</span></td></tr>
+            <tr><td>Rede de Mosquitos</td><td class="cost">5 gp</td><td class="slots">1</td><td>Descanso seguro na selva. <span class="source-tag">CS#4</span></td></tr>
+            <tr><td>Canoa</td><td class="cost">50 gp</td><td class="slots">-</td><td>Transporta 4 pessoas no rio. <span class="source-tag">CS#4</span></td></tr>
+        </tbody>
+    </table>
+
+    <div class="rules-box">
+        <strong>Regras de Carga (Encumbrance)</strong>
+        <ul>
+            <li>Você pode carregar uma quantidade de itens igual à sua <strong>Força</strong> ou <strong>10</strong> (o que for maior).</li>
+            <li>Itens pequenos/leves (como moedas até 100) não ocupam slots (indicados como 0 ou -).</li>
+            <li>Carregar mais que o limite deixa você <strong>Desajeitado</strong> (Velocidade 0).</li>
+        </ul>
+    </div>
+
+</body>
+</html>
