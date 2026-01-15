@@ -1,0 +1,18 @@
+[
+  {
+    "nome": "Guerreiro",
+    "flavor": "O mestre das armas e do combate...",
+    "atributos": "Força +2, Destreza +1...",
+    "habilidades": "Ataque Poderoso, Defesa...",
+    "talentos": "Especialização em Espada...",
+    "extras": "Começa com uma cota de malha..."
+  },
+  {
+    "nome": "Mago",
+    "flavor": "Um estudioso das artes arcanas...",
+    "atributos": "Inteligência +2, Sabedoria +1...",
+    "habilidades": "Lançar Magias, Ler Pergaminhos...",
+    "talentos": "Foco Arcano...",
+    "extras": "Grimório inicial..."
+  }
+]
