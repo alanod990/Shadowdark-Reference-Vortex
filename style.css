@@ -5,48 +5,94 @@
   box-sizing: border-box;
 }
 
-body {
-  border: 1px solid #000;
-  margin: 0;
-}
-
 .container {
   margin: 0 auto;
   border: 1px solid #ccc;
-  width: 50%;
-  background-color: powderblue;
+  padding: 10px;
 }
 
-h1.titulo {
-  text-align: center;
-}
-
-/* .classDiv div {
+.classBlock {
   border: 1px solid #333;
-  min-height: 100px;
-  width: 100%;
-} */
+  padding: 30px;
+  border-radius: 4px;
+}
 
-.titulo-classe {
+.classNameH3 {
   text-align: center;
 }
 
-.flavor-text {
+.classBio {
   font-style: italic;
   padding: 5px;
   border-left: 2px solid #262626;
   text-align: justify;
 }
-.barra-atributos {
-  font-weight: bold;;
-  background: #e0e0e0;
+
+.lista-habilidades {
+  list-style: none; /* Tira as bolinhas originais da lista */
 }
-.habilidades {
-      
+
+.container-atributos {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
-.talentos {
-      
+
+.lista-horizontal {
+  list-style: none; /* Tira as bolinhas originais da lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Coloca os itens lado a lado */
+  flex-wrap: wrap; /* Permite quebrar linha se não couber na tela */
+  gap: 5px; /* Espaço mínimo entre itens */
 }
-.extras {
-      
+
+.lista-horizontal li:not(:last-child)::after {
+  content: "•";
+  margin-left: 10px; /* Distância da bolinha para o texto */
+  color: #555; /* Cor da bolinha */
+}
+
+
+
+/* --- ESTILOS DA TABELA DE TALENTOS --- */
+/* A estrutura geral da tabela */
+.tabela-talentos {
+  width: 100%;
+  border-collapse: collapse; /* Remove os espaços duplos entre bordas */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: #fff; /* Fundo branco para leitura */
+}
+
+/* O Cabeçalho (Linha escura: 2d6 | Talento) */
+.tabela-talentos th {
+  background-color: #333; /* Fundo cinza escuro/preto */
+  color: white;           /* Texto branco */
+  font-weight: bold;
+  padding: 8px;
+  border: 1px solid #333;
+  text-align: center;     /* Centraliza os títulos */
+}
+
+/* As Células de dados (Linhas normais) */
+.tabela-talentos td {
+  border: 1px solid #ccc; /* Borda fina cinza */
+  padding: 6px 10px;      /* Espaçamento interno para o texto não colar na borda */
+  vertical-align: middle; /* Alinha o texto verticalmente */
+  line-height: 1.4;       /* Melhora a leitura de textos longos */
+}
+
+/* Classe específica para centralizar (Coluna dos dados "2", "3-6", etc.) */
+/* No seu script, certifique-se de adicionar classList.add("center") na célula do dado */
+.tabela-talentos .center {
+  text-align: center;
+  font-weight: bold;      /* Deixa o número do dado em negrito para destaque */
+  white-space: nowrap;    /* Impede que "10-11" quebre de linha */
+}
+
+/* Efeito "Zebra": Cores alternadas nas linhas pares para facilitar a leitura */
+.tabela-talentos tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
