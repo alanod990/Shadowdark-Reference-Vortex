@@ -1,0 +1,49 @@
+// Função para buscar os dados e popular a página
+async function carregarClasses() {
+  try {
+    // Busca o arquivo JSON
+    const classesDB = await fetch("classes.json");
+    const listClasses = await classesDB.json();
+
+    // Seleciona o container onde as classes serão inseridas
+    // Baseado na class="container" do seu HTML
+    const selecDiv = document.querySelector(".container");
+
+    listClasses.forEach((theClass) => {
+      // Cria a div principal da classe
+      const makeClassDiv = document.createElement("div");
+      makeClassDiv.classList.add("bloco-classe");
+
+      // Cria o título (h3)
+//      const titulo = document.createElement("h3");
+//      titulo.textContent = classComposer.nome;
+//      titulo.classList.add("titulo-classe");
+//      makeDivClass.appendChild(titulo);
+
+      // Função auxiliar para criar as divs internas
+      // Mapeando para as classes que você definiu no HTML:
+      // flavor-text, barra-atributos, habilidades, talentos, extras
+      function classNconttent(divClass, divContent) {
+        const div = document.createElement("div");
+        div.classList.add(divClass);
+        div.textContent = divContent;
+        return div;
+      }
+
+
+      makeClassDiv.appendChild(classNconttent("flavor-text", theClass.flavor));
+      makeClassDiv.appendChild(classNconttent("barra-atributos", theClass.atributos));
+      makeClassDiv.appendChild(classNconttent("habilidades", theClass.habilidades));
+      makeClassDiv.appendChild(classNconttent("talentos", theClass.talentos));
+      makeClassDiv.appendChild(classNconttent("extras", theClass.extras));
+
+      // Adiciona a classe completa ao container principal
+      selecDiv.appendChild(makeClassDiv);
+    });
+  } catch (erro) {
+    console.error("Erro ao carregar as classes:", erro);
+  }
+}
+
+// Executa a função quando a página carregar
+carregarClasses();

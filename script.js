@@ -17,6 +17,7 @@ async function carregarClasses() {
       // Cria o título (h3)
       const titulo = document.createElement("h3");
       titulo.textContent = classe.nome;
+      titulo.classList.add("titulo-classe");
       divClasse.appendChild(titulo);
 
       // Função auxiliar para criar as divs internas
@@ -29,7 +30,7 @@ async function carregarClasses() {
         return div;
       }
 
-      divClasse.appendChild(criarDivInfo("flavor-text", classe.flavor));
+      2 .appendChild(criarDivInfo("flavor-text", classe.flavor));
       divClasse.appendChild(criarDivInfo("barra-atributos", classe.atributos));
       divClasse.appendChild(criarDivInfo("habilidades", classe.habilidades));
       divClasse.appendChild(criarDivInfo("talentos", classe.talentos));

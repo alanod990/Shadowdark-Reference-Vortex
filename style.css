@@ -21,8 +21,32 @@ h1.titulo {
   text-align: center;
 }
 
-.bloco-classe div {
+/* .bloco-classe div {
   border: 1px solid #333;
   min-height: 100px;
   width: 100%;
+} */
+
+.titulo-classe {
+  text-align: center;
+}
+
+.flavor-text {
+  font-style: italic;
+  padding: 5px;
+  border-left: 2px solid #262626;
+  text-align: justify;
+}
+.barra-atributos {
+  font-weight: bold;;
+  background: #e0e0e0;
+}
+.habilidades {
+      
+}
+.talentos {
+      
+}
+.extras {
+      
 }
