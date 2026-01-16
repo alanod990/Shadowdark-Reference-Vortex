@@ -86,7 +86,7 @@
 
 /* Classe específica para centralizar (Coluna dos dados "2", "3-6", etc.) */
 /* No seu script, certifique-se de adicionar classList.add("center") na célula do dado */
-.tabela-talentos .center {
+.tabela-talentos .celula-dado {
   text-align: center;
   font-weight: bold;      /* Deixa o número do dado em negrito para destaque */
   white-space: nowrap;    /* Impede que "10-11" quebre de linha */
