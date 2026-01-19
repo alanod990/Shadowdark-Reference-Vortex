@@ -1,16 +1,12 @@
 [
   {
-    "nome": "Guerreiro",
-    "flavor": "Sólido, especialista em algum tipo de arma e todas as armaduras. Uma combinação equilibrada entre ataque, defesa e dano. Seja com a força ou a agilidade você é um lutador nato, perito em um tipo de armas definido por você e sempre podendo confiar em seu escudo.",
-    "atributos": [
-      { "tipo": "Armas", "description": "Todas" },
-      { "tipo": "Armadura", "description": "Todas + Escudos" },
-      { "tipo": "PV", "description": "1d8/nível" }
-    ],
+    "nome": "1. Guerreiro (Arma+Escudo)",
+    "flavor": "Sólido, especialista em algum tipo de arma e todas as armaduras. Uma combinação equilibrada entre ataque, defesa e dano. Seja com a força ou a agilidade você é um lutador nato, perito em um tipo de armas definido por você e sempre podendo confiar em seu escudo. Você pode carregar mais equipamento e tem maior habilidade em perícias do seu foco de ataque.",
+    "atributos": "Armas: Todas • Armadura: Todas + Escudos • PV: 1d8/nível",
     "habilidades": [
-      {"habNome": "Mestria com Arma", "habDes": "Escolha 1 arma. Ganha +1 atk/dano e +metade do nível (arredondado baixo).1"},
-      {"habNome": "Determinação (Grit)", "habDes": "Escolha FOR ou DES. Vantagem em testes desse atributo."},
-      {"habNome": "Cargueiro", "habDes": "Adiciona mod. CON aos espaços de carga."}
+      { "habNome": "Mestria com Arma", "habDes": "Escolha 1 arma. Ganha +1 atk/dano e +metade do nível (arredondado baixo)." },
+      { "habNome": "Determinação (Grit)", "habDes": "Escolha FOR ou DES. Vantagem em testes desse atributo." },
+      { "habNome": "Cargueiro", "habDes": "Adiciona mod. CON aos espaços de carga." }
     ],
     "talentos": [
       { "dResult": "2", "dEffect": "Ganha Mestria com Arma em um tipo adicional." },
@@ -18,6 +14,295 @@
       { "dResult": "7-9", "dEffect": "+2 no atributo Força, Destreza ou Constituição." },
       { "dResult": "10-11", "dEffect": "Escolha um tipo de armadura. +1 CA com ela." },
       { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ],
+    "extras": "<table><tr><th colspan='4'>Títulos de Guerreiro</th></tr><tr><th style='background:#ccc;color:black'>Nível</th><th style='background:#ccc;color:black'>Leal</th><th style='background:#ccc;color:black'>Caótico</th><th style='background:#ccc;color:black'>Neutro</th></tr><tr><td class='center'>1-2</td><td>Escudeiro</td><td>Biltre</td><td>Guerreiro</td></tr><tr><td class='center'>3-4</td><td>Cavaleiro</td><td>Bandido</td><td>Bárbaro</td></tr><tr><td class='center'>5-6</td><td>Cavaleiro Real</td><td>Matador</td><td>Furioso</td></tr><tr><td class='center'>7-8</td><td>Thane</td><td>Saqueador</td><td>Chefe de Guerra</td></tr><tr><td class='center'>9-10</td><td>Lorde</td><td>Senhor da Guerra</td><td>Caudilho</td></tr></table>"
+  },
+  {
+    "nome": "2. Guerreiro (Arqueiro)",
+    "flavor": "Especialista em armas de distância, arcos, arremesso ou bestas, seu objetivo é derrubar o adversário antes que ele chegue em você. Seja como o arqueiro clássico, o atirador de besta blindado ou o arremessador, munido de escudo, suas habilidades são incomparáveis tanto para acertar quanto para garantir que o alvo pare onde está. Podem carregar espaço extra para munição e uma boa arma de curto alcance caso tudo dê errado.",
+    "atributos": "Regras: Usa estatísticas, títulos e talentos do Guerreiro (Foco DES).",
+    "habilidades": [],
+    "talentos": []
+  },
+  {
+    "nome": "3. Guerreiro (Pesado)",
+    "flavor": "Geralmente o “fortão” do grupo, com dano massivo com armas pesadas ou de grande alcance. Seja com impacto ou corte seu objetivo é causar o maior prejuízo ao inimigo, e acabar com tudo rapidamente. Alguns preferem o máximo de proteção possível enquanto outros apostam na silenciosidade para surpreender o inimigo, não importando o método, os objetivos são os mesmos. O grupo sempre pode contar com você se precisar arrombar uma porta ou destruir alguma coisa.",
+    "atributos": "Regras: Usa estatísticas, títulos e talentos do Guerreiro (Foco FOR).",
+    "habilidades": [],
+    "talentos": []
+  },
+  {
+    "nome": "4. Ladrão",
+    "flavor": "Um clássico solucionador de problemas, luta com astúcia, desvenda perigos e armadilhas. Você combate ardilosamente encontrando o ponto cego dos inimigos. Especializado em armas de destreza e em suas mãos rápidas é um excelente combatente se souber evitar os danos. Essencial em muitas masmorras porque é uma das poucas classes que pode desarmar armadilhas, muitas vezes poupando o grupo da morte certa.",
+    "atributos": "Armas: Clava, Besta, Adaga, Arco curto, Espadas Curtas • Armadura: Couro • PV: 1d4",
+    "habilidades": [
+      { "habNome": "Ataque Furtivo", "habDes": "+1 dado de dano se o inimigo não o vê. (+dado extra nv 2, 4, 6...)." },
+      { "habNome": "Ladinagem", "habDes": "Vantagem (DES) p/ furtividade, bater carteira, trancas e armadilhas." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Vantagem em Iniciativa. Rerola se igual" },
+      { "dResult": "3-6", "dEffect": "Ataque Furtivo causa +1 dado de dano." },
+      { "dResult": "7-9", "dEffect": "+2 no atributo Força, Destreza ou Carisma." },
+      { "dResult": "10-11", "dEffect": "+1 em ataques corpo a corpo e à distância." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ],
+    "extras": "<table><tr><th colspan='4'>Títulos de Ladrão</th></tr><tr><td class='center'>1-2</td><td>Salteador</td><td>Capanga</td><td>Ladrão</td></tr><tr><td class='center'>3-4</td><td>Arrombador</td><td>Degolador</td><td>Fora da Lei</td></tr><tr><td class='center'>5-6</td><td>Trapaceiro</td><td>Sombra</td><td>Ladino</td></tr><tr><td class='center'>7-8</td><td>Subchefe</td><td>Assassino</td><td>Renegado</td></tr><tr><td class='center'>9-10</td><td>Chefe da Guilda</td><td>Espectro</td><td>Rei Bandido</td></tr></table>"
+  },
+  {
+    "nome": "5. Clérigo (Batalhador)",
+    "flavor": "Guerreiro divino com habilidades em combate e exorcismo, protege aliados das forças do mal. Com o atributo secundário na força ou destreza e proficiência em todas as armaduras e escudos você é um combatente capaz. Além de conjurar magias divinas, é temível numa luta e pode manter o grupo vivo por mais tempo. Você deve escolher uma deidade entre as disponíveis e seguir os seus preceitos e alinhamentos.",
+    "atributos": "Armas: Clava, Besta, Adaga, Maça, Espada Longa, Martelo, Bastão • Armadura: Todas + Escudos • PV: 1d6",
+    "habilidades": [
+      { "habNome": "Expulsar Mortos-Vivos", "habDes": "Conhece a magia automaticamente (não conta no limite)." },
+      { "habNome": "Divindade", "habDes": "Escolha um deus. Símbolo sagrado necessário para conjurar." },
+      { "habNome": "Conjuração", "habDes": "Magias de Clérigo (Ver Tabela)." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Vantagem ao lançar uma magia conhecida (escolha uma)." },
+      { "dResult": "3-6", "dEffect": "+1 em ataques corpo a corpo ou à distância." },
+      { "dResult": "7-9", "dEffect": "+1 em testes de conjuração de clérigo." },
+      { "dResult": "10-11", "dEffect": "+2 no atributo Força ou Sabedoria." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ],
+    "extras": "<table><tr><th colspan='4'>Títulos de Clérigo</th></tr><tr><td class='center'>1-2</td><td>Acólito</td><td>Iniciado</td><td>Buscador</td></tr><tr><td class='center'>3-4</td><td>Cruzado</td><td>Fanático</td><td>Invocador</td></tr><tr><td class='center'>5-6</td><td>Templário</td><td>Cultista</td><td>Harúspice</td></tr><tr><td class='center'>7-8</td><td>Campeão</td><td>Flagelo</td><td>Místico</td></tr><tr><td class='center'>9-10</td><td>Paladino</td><td>Cavaleiro do Caos</td><td>Oráculo</td></tr></table><h3>Magias de Clérigo (Tier 1)</h3><ul><li><strong>Cura (Cure Wounds):</strong> Toque. Cura 1d6+metade do nível.</li><li><strong>Luz (Light):</strong> Toque. Objeto brilha como tocha (1 hora).</li><li><strong>Arma Sagrada (Holy Weapon):</strong> +1 atk/dano e vira mágica (5 rodadas).</li><li><strong>Escudo da Fé (Shield of Faith):</strong> +2 CA para você ou aliado (5 rodadas).</li><li><strong>Expulsar Mortos-Vivos (Turn Undead):</strong> Afasta mortos-vivos (CD Carisma).</li><li><strong>Proteção contra o Mal (Protection from Evil):</strong> Desvantagem em atks de caos.</li></ul>"
+  },
+  {
+    "nome": "6. Clérigo (Padre)",
+    "flavor": "Suporte e cura, especialista em manter o grupo inteiro e evitar mortos-vivos, duro na queda. Com o atributo secundário na constituição, seu objetivo é sobreviver e manter todo mundo em pé. Excelente ao lidar com mortos vivos, suas capacidades de apoio podem ser ainda mais elaboradas dependendo da sua inteligência ou carisma para lidar com os perigos A deidade escolhida geralmente é da vida, guerra ou paz.",
+    "atributos": "Regras: Usa estatísticas e talentos do Clérigo (Foco em Sobrevivência/Cura).",
+    "habilidades": [],
+    "talentos": []
+  },
+  {
+    "nome": "7. Mago",
+    "flavor": "Conjurador arcano, dominante das artes místicas, cria itens mágicos. Não importa se você aprendeu numa universidade de magia secreta, se foi escolhido por uma seita arcana ou se simplesmente nasceu desse jeito, você tem poderes que lhe permitem dobrar a realidade. Limitados apenas pelas suas próprias habilidades, os magos podem ser uma fonte ilimitada de dano, controle e suporte. Evite dano e mantenha sempre um punhal consigo caso cheguem perto demais de você.",
+    "atributos": "Armas: Adaga, Cajado • Armadura: Nenhuma • PV: 1d4",
+    "habilidades": [
+      { "habNome": "Aprender Magias", "habDes": "Pode aprender de pergaminhos (1 dia estudo, Teste INT CD 15)." },
+      { "habNome": "Conjuração", "habDes": "Começa com 3 magias de Tier 1." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Criar item mágico (1/dia) OU Ganhe vantagem em 1 magia." },
+      { "dResult": "3-6", "dEffect": "+2 no atributo Inteligência OU +1 em conjuração." },
+      { "dResult": "7-9", "dEffect": "Aprenda uma magia arcana adicional de qualquer tier." },
+      { "dResult": "10-11", "dEffect": "+2 no atributo Destreza ou Inteligência." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ],
+    "extras": "<table><tr><th colspan='4'>Títulos de Mago</th></tr><tr><td class='center'>1-2</td><td>Aprendiz</td><td>Adepto</td><td>Xamã</td></tr><tr><td class='center'>3-4</td><td>Conjurador</td><td>Canalizador</td><td>Vidente</td></tr><tr><td class='center'>5-6</td><td>Arcanista</td><td>Bruxo</td><td>Guardião</td></tr><tr><td class='center'>7-8</td><td>Mago</td><td>Diabolista</td><td>Sábio</td></tr><tr><td class='center'>9-10</td><td>Arquimago</td><td>Feiticeiro</td><td>Druida</td></tr></table><h4>Acidentes Mágicos (d12)</h4><ul><li><strong>1-4 Fagulha:</strong> A magia falha e você não pode conjurá-la novamente até descansar.</li><li><strong>5-8 Choque:</strong> Como acima, e você toma 1d4 de dano por nível da magia.</li><li><strong>9-10 Dreno:</strong> Como acima, e você esquece a magia permanentemente (precisa reaprender).</li><li><strong>11 Caos:</strong> Role na tabela de Magia Selvagem.</li><li><strong>12 Catástrofe:</strong> Explode em chamas arcanas. 1d6 de dano por nível em todos a 'perto'.</li></ul>"
+  },
+  {
+    "nome": "8. Druida",
+    "flavor": "Conjurador elementar, magias da natureza e metamorfose. Um mago que necessariamente precisa ser neutro, tem poderes sobre os elementos, as formas das plantas e os animais. Suas capacidades se estendem aos conhecimentos arcanos e da natureza sendo muito úteis em qualquer floresta ou selva. Além disso, pode ser temível a curto alcance sempre podendo contar com seu cajado místico.",
+    "atributos": "Regras: Mago/Natureza.",
+    "habilidades": [],
+    "talentos": [],
+    "extras": "<h3>Magias de Natureza (Tier 1)</h3><ul><li><strong>Abraço da Flora:</strong> Vinhas prendem inimigo (FOR CD 12).</li><li><strong>Coração de Leão:</strong> Aliado ganha +2 em dano e +1 em moral.</li><li><strong>Sibilara da Víbora:</strong> Inimigos em área 'perto' fazem teste moral.</li><li><strong>Recompensa Sagrada:</strong> Cria comida para 4 pessoas.</li><li><strong>Purga Xamânica:</strong> Remove veneno ou doença de um alvo.</li><li><strong>Casco da Tartaruga:</strong> Alvo ganha +2 CA por 5 rodadas.</li></ul>"
+  },
+  {
+    "nome": "9. Spell Dancer",
+    "flavor": "Conjurador que mistura habilidades marciais misticas, feitiços e agilidade. Com uma arma de finesse e muita agilidade, esse conjurador procura confundir os inimigos com ilusões e feitiços até finalizá-los com um delicado corte na garganta. Esse tipo de mago é o mais ávido na busca de relíquias e itens mágicos, dizem que muitos deles o fazem para copiá-los mas a verdade sinistra é que muitos nunca mais são vistos.",
+    "atributos": "Regras: Mago (foco em magias de toque/self e atributos físicos).",
+    "habilidades": [],
+    "talentos": []
+  },
+  {
+    "nome": "10. Warlock (Bruxo)",
+    "flavor": "Guerreiro místico apadrinhado por uma entidade extra-planar. Algo aconteceu com você em algum momento da sua vida que fez com que uma entidade extra-planar onipoderosa se afeiçoar por sua pessoa e essa força lhe dá poderes, à custa de favores que muitas vezes você não compreende. Seja como um espadachim blindado pelo sobrenatural ou um enganador guiado por uma força sinistra, seus poderes lhe dão vantagens em várias situações, dependendo das suas escolhas. Capaz de um número seleto de armas, armaduras médias e escudos, você é um combatente excelente.",
+    "atributos": "Armas: Clava, Besta, Adaga, Maça, Espada • Armadura: Couro, Malha, Escudo • PV: 1d6",
+    "habilidades": [
+      { "habNome": "Linguas", "habDes": "Você fala celestial, diabólico, draconico, primordial ou silvestre." },
+      { "habNome": "Patrono", "habDes": "Fonte de poder. Inicia com uma Dádiva do Patrono." },
+      { "habNome": "Dádiva", "habDes": "Sempre que ganha um talento, pode rolar na tabela de Patrono ao invés da tabela de classe." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Role uma Dádiva do Patrono (dom inexplicável)." },
+      { "dResult": "3-6", "dEffect": "Adicione +1 ponto em dois atributos diferentes." },
+      { "dResult": "7-9", "dEffect": "+1 em ataques corpo a corpo ou à distância." },
+      { "dResult": "10-11", "dEffect": "Role duas Dádivas e escolha uma para manter." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ],
+    "extras": "<table><tr><th colspan='4'>Títulos de Warlock</th></tr><tr><td class='center'>1-2</td><td>Favorecido</td><td>Marcado</td><td>Escolhido</td></tr><tr><td class='center'>3-4</td><td>Arauto</td><td>Fanático</td><td>Canalizador</td></tr><tr><td class='center'>5-6</td><td>Eminente</td><td>Ocultista</td><td>Profetizado</td></tr><tr><td class='center'>7-8</td><td>Exaltado</td><td>Campeão</td><td>Transcendente</td></tr><tr><td class='center'>9-10</td><td>Encarnação</td><td>Precursor</td><td>Avatar</td></tr></table><p><strong>Nota:</strong> Consulte a seção de Patronos para as tabelas de dádivas específicas (Almazzat, Kytheros, Mugdulblub, Shune, Titania, Willowman).</p>"
+  },
+  {
+    "nome": "11. Gladiador",
+    "flavor": "Especialista em combate, táticas de grupo. mitigar dano e sobrepujar a morte certa. Seja nos becos do submundo, na grade de alguma arena sinistra ou no glorioso coliseu, você aprendeu a lutar e sobreviver, melhor que isso, sabe fazer isso de forma espetacular. Podendo emular qualquer set de armas do gladiador clássico e sendo capaz de resistir a danos terríveis, muitas vezes vão achar que você está morto quando na verdade está pronto para levantar de novo e ouvir os gritos da torcida.",
+    "atributos": "Armas: Todas • Armadura: Couro, Escudos • PV: 1d8",
+    "habilidades": [
+      { "habNome": "Última Resistência", "habDes": "Levanta com 1 PV se tirar 18-20 no teste de morte." },
+      { "habNome": "Incansável (3/dia)", "habDes": "CD 18 CON para ficar com 1 PV ao cair a 0." },
+      { "habNome": "Floreio (3/dia)", "habDes": "Recupera 1d6 PV ao acertar ataque corpo a corpo." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "1/dia, ignore todo o dano e efeitos de um ataque." },
+      { "dResult": "3-6", "dEffect": "Você ganha +1 de dano com armas corpo a corpo." },
+      { "dResult": "7-9", "dEffect": "+2 no atributo Força ou Constituição, ou +1 em ataques." },
+      { "dResult": "10-11", "dEffect": "Aumente o PV que você ganha com *Floreio* em +1d6." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
     ]
+  },
+  {
+    "nome": "12. Ninja",
+    "flavor": "Poderes e armas das sombras, teleporte, técnicas especiais únicas. Sua existência é um clichê, você foi treinado desde a mais tenra infância pelo seu clã, família ou máfia (muitas vezes tudo isso junto) em ser uma sombra, o dominante do subterfúgio, aquele que caminha no jardim. Mesmo com todo o treinamento e as armas clássicas cada ninja carrega consigo um conjunto de técnicas especiais que só ele domina e desenvolve com o tempo, tornando cada um único e mortal.",
+    "atributos": "Armas: Zarabatana, Boleadeira, Adaga, Corrente, Cimitarra, Shuriken • PV: 1d6",
+    "habilidades": [
+      { "habNome": "Assassinato", "habDes": "Dobro de dano em alvos surpresos." },
+      { "habNome": "Passo de Fumaça (3/dia)", "habDes": "Teleporte curto (ação livre)." },
+      { "habNome": "Lótus Negra", "habDes": "Inicia com um talento da tabela Lótus Negra." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Você é treinado no uso de venenos." },
+      { "dResult": "3-6", "dEffect": "Role um talento adicional na tabela de Talentos da Lótus Negra." },
+      { "dResult": "7-9", "dEffect": "+2 no atributo Força ou Destreza, ou +1 em ataques." },
+      { "dResult": "10-11", "dEffect": "Ganhe um uso adicional do seu talento *Passo de Fumaça*." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ],
+    "extras": "<table><tr><th colspan='2'>Talentos da Lótus Negra (d12)</th></tr><tr><td class='center'>1</td><td><strong>Assassino Mortal:</strong> Dano triplo com Assassinato.</td></tr><tr><td class='center'>2</td><td><strong>Imunidade:</strong> Você é imune a venenos e toxinas.</td></tr><tr><td class='center'>3</td><td><strong>Visão Sombria:</strong> Você pode ver em escuridão mágica.</td></tr><tr><td class='center'>4</td><td><strong>Aranha:</strong> Você pode escalar superfícies lisas ou tetos sem testes.</td></tr><tr><td class='center'>5</td><td><strong>Desaparecer:</strong> Conjure <em>Invisibilidade</em> (self) 1/dia.</td></tr><tr><td class='center'>6-12</td><td>(Ver tabela completa no manual para mais efeitos...)</td></tr></table>"
+  },
+  {
+    "nome": "13. Viking",
+    "flavor": "Navegador, manobras com escudos, juramento aos deuses antigos dão bônus diários. Não importa se você é um nórdico violento, um guerreiro helênico de tanga ou um canibal alucinado, sua comunidade original depende de duas coisas, barcos e escudos - e você é mestre nas duas. Acostumado a viver nauticamente, você está em casa em qualquer barco ou canoa. Domina o escudo como a mão esquerda e pode manter-se como uma parede diante do perigo. Por último e não menos especial, diariamente faz juramento aos seus deuses pagãos, podendo ganhar vantagens em combate, sorte ou ardilosidade.",
+    "atributos": "Armas: Adaga, Machados, Arco Longo, Espada, Lança • Armadura: Couro, Malha, Escudo • PV: 1d8",
+    "habilidades": [
+      { "habNome": "Parede de Escudos", "habDes": "Ação para ter CA 20 (com escudo)." },
+      { "habNome": "Deuses Antigos (Escolha 1/dia)", "habDes": "Odin (Cura 1d4 ao matar), Freya (Sorte), Loki (Mentira)." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "1/dia Frenesi (imune a dano 3 rodadas)." },
+      { "dResult": "3-6", "dEffect": "+1 de dano." },
+      { "dResult": "7-9", "dEffect": "+2 FOR/CON ou +1 ataque." },
+      { "dResult": "10-11", "dEffect": "Dualidade: Escolha 2 efeitos dos Deuses/dia." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ],
+    "extras": "<table><tr><th colspan='4'>Títulos de Viking</th></tr><tr><td class='center'>1-2</td><td>Povo Livre</td><td>Ralé</td><td>Andarilho</td></tr><tr><td class='center'>3-4</td><td>Escudeiro</td><td>Incursor</td><td>Explorador</td></tr><tr><td class='center'>5-6</td><td>Thane</td><td>Saqueador</td><td>Aventureiro</td></tr><tr><td class='center'>7-8</td><td>Jarl</td><td>Conquistador</td><td>Renomado</td></tr><tr><td class='center'>9-10</td><td>Rei/Rainha</td><td>Usurpador</td><td>Lendário</td></tr></table>"
+  },
+  {
+    "nome": "14. Ranger",
+    "flavor": "Explorador, sobrevivente, especialista em natureza, fabrica poções com ervas. Senhor da selva, sua capacidade de combate é excelente mas incomparável em ambiente natural. Adepto da agilidade e da astúcia pode ser fatal a qualquer distância. Seus conhecimentos permitem misturar ervas e criar unguentos capazes de curar e criar diversos efeitos. Excelente com o arco ou qualquer arma de destreza, boa resistência e dano moderado.",
+    "atributos": "Armas: Adaga, Arcos, Espadas, Lança, Cajado • Armadura: Couro, Malha • PV: 1d8",
+    "habilidades": [
+      { "habNome": "Desbravador", "habDes": "Vantagem em navegação, rastreio e sobrevivência." },
+      { "habNome": "Herbalismo (Teste INT)", "habDes": "CD 11 Bálsamo (1 PV), CD 12 Estimulante, CD 15 Curativo (Poção de Cura)." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Dano da arma escolhida vira 1d12." },
+      { "dResult": "3-6", "dEffect": "+1 ataque e dano (corpo a corpo ou distância)." },
+      { "dResult": "7-9", "dEffect": "+2 FOR, DES ou INT." },
+      { "dResult": "10-11", "dEffect": "Vantagem no teste de um remédio específico." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ]
+  },
+  {
+    "nome": "15. Metamorfo",
+    "flavor": "Assume gradativamente forma animal, ataques ferais e resistência sobrenatural. Não se sabe se você descende de um druida, um licantropo ou alguma espécie de fera inumana. O que importa é que não muito depois de se tornar um jovem seu corpo começou a mudar e sua própria natureza selvagem o convocou para aventura. Você é capaz de mudar de forma e realizar ataques trucidantes, além disso, seus sentidos animais e poderes fisiológicos vão se desenvolvendo conforme sobe de nível. São excelentes arremessadores resultado dos sentidos aguçados.",
+    "atributos": "Armas: Distância • Armadura: Couro, Malha, Escudos • PV: 1d8",
+    "habilidades": [
+      { "habNome": "Ataque da Fera", "habDes": "Escolha 1 tipo (Lobo 1d6+, Urso 1d8+, Cobra 1d4+Veneno)." },
+      { "habNome": "Forma de Fera", "habDes": "1/dia, transforma-se na fera (3 rodadas). Ganha stats da fera." },
+      { "habNome": "Pele de Fera", "habDes": "Soma CON à CA." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "+1 uso diário de Forma de Fera." },
+      { "dResult": "3-5", "dEffect": "Aumenta a categoria do dado de dano do Ataque da Fera." },
+      { "dResult": "6-9", "dEffect": "+2 FOR/CON ou +1 CA sem armadura." },
+      { "dResult": "10-11", "dEffect": "Cria um item mágico animal." },
+      { "dResult": "12", "dEffect": "Selecione e adicione um novo tipo de ataque de fera." }
+    ]
+  },
+  {
+    "nome": "16. Assassino",
+    "flavor": "Ataques ardilosos, disfarces, venenos, matar sem ser visto. Diferente do ladrão, que é essencialmente um explorador e o ninja que é um artista marcial, o assassino é um especialista na morte. Você pode ser o saltador de telhados, a pior carona possível ou a dançarina fatal, não importando a sua origem ou método, o seu hábito é garantir que o seu alvo morra, de preferência sem nem saber disso. Cogite essa classe se o seu ladrão ou ninja na verdade é um tremendo enganador carismático.",
+    "atributos": "Armas: Clava, Besta, Adaga, Espada Curta, Lança • Armadura: Couro, Malha • PV: 1d6",
+    "habilidades": [
+      { "habNome": "Ataque Furtivo", "habDes": "Dano extra em alvo não ciente (+1 dado a cada 2 níveis)." },
+      { "habNome": "Veneno", "habDes": "Aplica veneno (3 rodadas). Próximo ataque +1d4 dano." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Nova arma ou armadura." },
+      { "dResult": "3-6", "dEffect": "+2 FOR ou DES." },
+      { "dResult": "7-9", "dEffect": "+1 ataque/dano com arma escolhida." },
+      { "dResult": "10-11", "dEffect": "Veneno causa +1 ponto de dano." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ]
+  },
+  {
+    "nome": "17. Mestre das Feras",
+    "flavor": "Caçador, companhia animal do mesmo nível, domínio sobre feras, faz armadilhas. Você é um guerreiro que se sente melhor entre os animais do que com outras pessoas. Com consequência disso tem sempre um companheiro animal do mesmo nível que o seu e pode trocar por outros ao longo do tempo. Você é acostumado a viver em ambiente selvagem e lidar com seus habitantes, sabendo lidar com cada tipo de animal, podendo inclusive domesticá-los, sendo essencial para lidar com montarias ou grande feras, além disso, pode fazer armadilhas, não importando o alvo.",
+    "atributos": "Armas: Clava, Adaga, Machado Grande, Maça, Lança • PV: 1d8",
+    "habilidades": [
+      { "habNome": "Afinidade", "habDes": "Teste de CAR para acalmar/domar feras." },
+      { "habNome": "Armadilhas", "habDes": "Cria armadilha de tropeço (1d4 dano)." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Nova arma ou armadura." },
+      { "dResult": "3-6", "dEffect": "+2 FOR ou CAR." },
+      { "dResult": "7-9", "dEffect": "+1 em testes de Afinidade Animal." },
+      { "dResult": "10-11", "dEffect": "Armadilhas causam +1 dano." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ]
+  },
+  {
+    "nome": "18. Górgona",
+    "flavor": "Petrificador, resistente a dano, pele de pedra “das cavernas”. Você veio de outro povo, talvez de um lugar distante, quem sabe de outro tempo. Não há como saber se algum antepassado seu foi amaldiçoado, se um dos elementais antigos fez parte da sua vida ou se de alguma forma seu sangue seja diferente, talvez tenha só nascido perto de um vulcão ou no meio de um terremoto. O que importa é que assim como o da medusa, o seu olhar pode paralisar os seres, seu sangue é mais denso, resistente a venenos e sua pele é blindada. Esses guerreiros costumam evitar a civilização por completo ou ainda vir de uma origem ainda mais exótica e dominam técnicas de fabricação de armas de obsidianas, frágeis se comparadas com o aço mas afiadíssimas. Desprezam qualquer tipo de armaduras e muitas vezes são vistos semi-nus enquanto paralisam seus oponentes surpresos.",
+    "atributos": "Armas: Bumerangue, Clava, Adaga, Lança • Armadura: Nenhuma • PV: 1d8",
+    "habilidades": [
+      { "habNome": "Olhar Petrificante", "habDes": "CD 15 CON ou petrifica por 1d4 rodadas." },
+      { "habNome": "Pele de Pedra", "habDes": "CA = 12 + metade do nível. Vantagem furtividade natural." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Encontra ovo de basilisco (pet)." },
+      { "dResult": "3-6", "dEffect": "+1 ataque e dano." },
+      { "dResult": "7-9", "dEffect": "+2 FOR, DES ou CON." },
+      { "dResult": "10-11", "dEffect": "+1 uso do Olhar Petrificante." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ]
+  },
+  {
+    "nome": "19. Necromante",
+    "flavor": "Arcanista que domina os mortos-vivos e os caminhos da morte. Você estudou as artes proibidas e seus segredos sinistros. Essencialmente um mago que além do conhecimento secreto, sabe encantar os mortos, tornando-os seus lacaios, além de contar com sua fiel maça, sacrificar a ética por conhecimento também o habilitou a decifrar os códigos secretos podendo, aprender feitiços que encontrar pelo caminho sem precisar do tempo que um conjurador tradicional teria.",
+    "atributos": "Armas: Adaga, Maça, Cajado • Armadura: Nenhuma • PV: 1d4",
+    "habilidades": [
+      { "habNome": "Comandar Mortos-Vivos", "habDes": "Teste CAR vs CD 10+Nível para controlar." },
+      { "habNome": "Estudo", "habDes": "Aprende pergaminhos permanentemente (INT CD 15)." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "+1 em testes de Comandar Mortos." },
+      { "dResult": "3-6", "dEffect": "+2 INT ou CAR." },
+      { "dResult": "7-9", "dEffect": "Lança 1 magia específica com vantagem." },
+      { "dResult": "10-11", "dEffect": "Ganha 1 magia conhecida extra." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ]
+  },
+  {
+    "nome": "20. Valquíria",
+    "flavor": "Uma guerreira abençoada com acesso a magias divinas e familiares auxiliares. Diferente de um clérigo tradicional, você é uma amazona que depois de nascer, de uma grande batalha ou de uma experiência de quase morte foi abençoada pela deusa da guerra. Além de ser capaz de usar todas as armas, escudos e armaduras depois do terceiro nível você aprende encantamentos de clérigo. Possui um familiar voador místico que pode ajudar com mensagens e combate, multiplicando por cada nível. Você não se comunica diretamente com a deusa mas a sua presença pode ser sentida nos momentos mais precisos.",
+    "atributos": "Armas: Todas • Armadura: Todas • PV: 1d8",
+    "habilidades": [
+      { "habNome": "Corvo", "habDes": "Tem familiares corvos (1 por nível). Batedores frágeis." },
+      { "habNome": "Magias", "habDes": "Conjura como Clérigo a partir do nível 3." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Corvos ganham +1 PV, +1 atk, +1 CA." },
+      { "dResult": "3-6", "dEffect": "+2 FOR ou DES." },
+      { "dResult": "7-9", "dEffect": "+1 atk/dano com arma escolhida." },
+      { "dResult": "10-11", "dEffect": "Ganha 1 magia de clérigo conhecida." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ]
+  },
+  {
+    "nome": "21. Witch",
+    "flavor": "Conjuradora de forças diabólicas, fabrica poções, companheiro familiar, maldições. Da mesma forma que um clérigo você tem uma deidade que lhe empresta os poderes esse tipo de conjurador faz o mesmo com entidades diabólicas. Pode fabricar poções que curam ou envenenam, mediante concentração, pode atrapalhar completamente as ações de um adversário. Apesar de não ser tão resistente como um clérigo conta com armadura média e uma boa quantidade de armas como opções.",
+    "atributos": "Armas: Clava, Besta, Adaga, Espada Curta, Cajado • PV: 1d4",
+    "habilidades": [
+      { "habNome": "Preparar Poção (No descanso)", "habDes": "Cria Cura (1d4) ou Veneno (1d8 ingerido/1d2 arma)." },
+      { "habNome": "Maldição", "habDes": "Foco para dar desvantagem a um inimigo." }
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Poções melhoradas (+1 cura/dano)." },
+      { "dResult": "3-6", "dEffect": "+2 SAB ou CON." },
+      { "dResult": "7-9", "dEffect": "Lança 1 magia específica com vantagem." },
+      { "dResult": "10-11", "dEffect": "Ganha 1 magia conhecida extra." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ],
+    "extras": "<table><tr><th colspan='4'>Títulos de Witch</th></tr><tr><td class='center'>1-2</td><td>Cartomante</td><td>Sussurrador</td><td>Xamã</td></tr><tr><td class='center'>3-4</td><td>Vidante</td><td>Amaldiçoador</td><td>Conjurador</td></tr><tr><td class='center'>5-6</td><td>Profeta</td><td>Megera</td><td>Adivinho</td></tr><tr><td class='center'>7-8</td><td>Sábia</td><td>Anciã</td><td>Condutor</td></tr><tr><td class='center'>9-10</td><td>Baba</td><td>Baba</td><td>Baba</td></tr></table>"
   }
 ]

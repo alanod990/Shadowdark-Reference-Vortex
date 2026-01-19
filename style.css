@@ -96,3 +96,18 @@
 .tabela-talentos tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+/* adições do gemini */
+/* Estilo para listas dentro dos Extras (Magias, etc) */
+.container-extras ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+.container-extras li {
+    margin-bottom: 5px;
+}
+.container-extras h3, .container-extras h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}

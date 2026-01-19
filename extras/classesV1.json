@@ -1,0 +1,23 @@
+[
+  {
+    "nome": "Guerreiro",
+    "flavor": "Sólido, especialista em algum tipo de arma e todas as armaduras. Uma combinação equilibrada entre ataque, defesa e dano. Seja com a força ou a agilidade você é um lutador nato, perito em um tipo de armas definido por você e sempre podendo confiar em seu escudo.",
+    "atributos": [
+      { "tipo": "Armas", "description": "Todas" },
+      { "tipo": "Armadura", "description": "Todas + Escudos" },
+      { "tipo": "PV", "description": "1d8/nível" }
+    ],
+    "habilidades": [
+      {"habNome": "Mestria com Arma", "habDes": "Escolha 1 arma. Ganha +1 atk/dano e +metade do nível (arredondado baixo).1"},
+      {"habNome": "Determinação (Grit)", "habDes": "Escolha FOR ou DES. Vantagem em testes desse atributo."},
+      {"habNome": "Cargueiro", "habDes": "Adiciona mod. CON aos espaços de carga."}
+    ],
+    "talentos": [
+      { "dResult": "2", "dEffect": "Ganha Mestria com Arma em um tipo adicional." },
+      { "dResult": "3-6", "dEffect": "+1 em ataques corpo a corpo e à distância." },
+      { "dResult": "7-9", "dEffect": "+2 no atributo Força, Destreza ou Constituição." },
+      { "dResult": "10-11", "dEffect": "Escolha um tipo de armadura. +1 CA com ela." },
+      { "dResult": "12", "dEffect": "Escolha um talento ou +2 pontos de atributo." }
+    ]
+  }
+]
