@@ -1,0 +1,62 @@
+/* Reset CSS Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-main {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.container-classe {
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.classe-nome {
+    text-align: center;
+}
+
+.classe-bio {
+  font-style: italic;
+  padding: 5px;
+  border-left: 2px solid #262626;
+  text-align: justify;
+}
+
+.classe-atributos {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.classe-atributos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classe-atributos li:not(:last-child)::after {
+  content: "•";
+  margin: 10px;
+}
+
+.classe-habilidades {
+    columns: 2;
+}
+
+.classe-habilidades ul {
+  list-style: none; /* Tira as bolinhas originais da lista */
+}
+
+.classe-talentos th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
