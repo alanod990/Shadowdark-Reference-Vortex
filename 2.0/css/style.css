@@ -1,0 +1,46 @@
+nav {
+    background-color: grey;
+}
+
+nav ul {
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+
+nav a {
+    color: white;
+}
+
+.container {
+    min-height: 50px;
+    border: 2px solid;
+}
+.classInfos h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.tituloClasse::after {
+    content: ''; /* Required for pseudo-elements */
+    display: block;
+    width: 50%; /* Control the length of the border here */
+    height: 2px; /* Control the thickness of the border */
+    background-color: #000; /* Control the color */
+    position: absolute; /* Position it relative to the parent */
+    bottom: 1; /* Place it at the bottom */
+    right: 25%; /* Start it from the left (or adjust as needed) */
+}
+
+.bioClasse {
+    font-style: italic;
+    margin: 15px;
+}
+
+.proficienciasClasse table {
+    flex: 1 1 auto; /* Allows tables to grow/shrink based on container width */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
