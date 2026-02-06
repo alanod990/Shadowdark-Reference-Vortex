@@ -16,17 +16,27 @@ nav a {
 .container {
     margin: 0 auto;
     min-height: 50px;
-    max-width: 80%;
-    border: 2px solid;
+    width: 50%;
+    border: 1px solid;
 }
-.classInfos h1 {
+.tituloClasse {
     text-align: center;
     font-size: 20px;
 }
 
+.nomeClasse {
+    font-size:xx-large;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
 .bioClasse {
+    padding-left: 9px;
     font-style: italic;
     border-left: 3px solid;
+    width: 70%;
 }
 
 .proficienciasClasse tbody .nome {
@@ -36,7 +46,6 @@ nav a {
     font-style: italic;
 }.proficienciasClasse tbody {
     display: flex;
-    background-color: gray;
     border: solid 1px;
 }
 .proficienciasClasse tr {
@@ -49,19 +58,39 @@ nav a {
     margin-top: auto;
     margin-bottom: auto;
 }
+.proficienciasClasse {
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 .habilidades .nome {
     font-weight: bold;
-    display: inline;
 }
 
 .habilidades tr {
-    display: block;
+    width: 100%;
+    break-inside: avoid;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 .habilidades td {
     display: inline;
 }
+.habilidades td:first-child::after {
+    content: ".";
+}
 .habilidades tbody {
-    display: flex;
+    padding: 0px 10px 0px 10px;
+    display: block;
+    column-count: 2;
+    column-gap: 15px;
+}   
+.habilidades {
+    margin-bottom: 20px;
+}
+.habilidades .description {
+    text-align:justify;
 }
 
 .tabletitle {
@@ -73,4 +102,25 @@ nav a {
 }
 :is(.tableTalento, .titulos, .magiasconhecidas) td, thead {
     border-bottom: 1px solid;
+    text-align: center;
+}
+
+.tabelasclasse {
+    padding: 0px 10px 0px 10px;
+    display: block;
+    column-count: 2;
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+.tabelasclasse table {
+    width: 100%;
+}
+
+.tableTalento {
+}
+:is(.tableTalento, .tabletitulos) td:first-child {
+    text-align: center;
+    font-weight: bold;
+    width: 15%;
+
 }
