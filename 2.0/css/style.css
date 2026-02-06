@@ -14,7 +14,9 @@ nav a {
 }
 
 .container {
+    margin: 0 auto;
     min-height: 50px;
+    max-width: 80%;
     border: 2px solid;
 }
 .classInfos h1 {
@@ -22,25 +24,39 @@ nav a {
     font-size: 20px;
 }
 
-.tituloClasse::after {
-    content: ''; /* Required for pseudo-elements */
-    display: block;
-    width: 50%; /* Control the length of the border here */
-    height: 2px; /* Control the thickness of the border */
-    background-color: #000; /* Control the color */
-    position: absolute; /* Position it relative to the parent */
-    bottom: 1; /* Place it at the bottom */
-    right: 25%; /* Start it from the left (or adjust as needed) */
-}
-
 .bioClasse {
     font-style: italic;
-    margin: 15px;
+    border-left: 3px solid;
 }
 
-.proficienciasClasse table {
-    flex: 1 1 auto; /* Allows tables to grow/shrink based on container width */
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+.proficienciasClasse tbody .nome {
+    font-weight: bold;
+}
+.proficienciasClasse tbody .lista {
+    font-style: italic;
+}.proficienciasClasse tbody {
+    display: flex;
+    background-color: gray;
+    border: solid 1px;
+}
+.proficienciasClasse tr {
+    display: flex;
+}
+.proficienciasClasse tr:not(:last-child)::after {
+    content: "•";
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tituloTalento {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+.tableTalento thead {
+    background-color: lightgray;
+}
+.tableTalento td, thead {
+    border-bottom: 1px solid;
 }
