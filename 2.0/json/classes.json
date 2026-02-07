@@ -1,0 +1,30 @@
+[
+  {
+    "id": "",
+    "nome": "",
+    "bio": "",
+    "atributos": [
+        { "armas": ["", ""] },
+        { "armaduras": ["", ""] }
+        { "hp": ""}
+    ],
+    "habilidades": [
+      { "habNome": "", "habDes": "" },
+    ],
+    "talentos": [
+      { "dado": "", "dEffect": "" },
+      { "dado": "", "dEffect": "" },
+      { "dado": "", "dEffect": "" },
+      { "dado": "", "dEffect": "" },
+      { "dado": "", "dEffect": "" }
+    ],
+    "titulos": [
+      { "l": "", "c": "", "n": ""} //lvl1-2
+      { "l": "", "c": "", "n": ""} //lvl2-4
+      { "l": "", "c": "", "n": ""} //lvl5-6
+      { "l": "", "c": "", "n": ""} //lvl7-8
+      { "l": "", "c": "", "n": ""} //lvl9-10
+    ],
+    "extras": ""
+  },
+]
