@@ -1,0 +1,12 @@
+.container {
+    display: block; /* Não use flex aqui */
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.item {
+    break-inside: avoid; /* Evita que um item seja cortado ao meio entre colunas */
+    margin-bottom: 10px;
+    display: inline-block; /* Ajuda na renderização correta */
+    width: 100%;
+}

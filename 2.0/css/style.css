@@ -16,8 +16,9 @@ nav a {
 .container {
     margin: 0 auto;
     min-height: 50px;
-    width: 50%;
     border: 1px solid;
+    width: 100%;
+    max-width: 800px;
 }
 .tituloClasse {
     text-align: center;
@@ -123,4 +124,31 @@ nav a {
     font-weight: bold;
     width: 15%;
 
+}
+.magiasconhecidas {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+.magiasconhecidas td:first-child {
+    width: 10%;
+}
+.magiasconhecidas td {
+    padding: 2px;
+}
+.listamagias {
+    width: 100%;
+}
+.listamagias table {
+    margin: auto;
+}
+.listamagias tbody {
+    display: flex;
+    flex-wrap: wrap;
+}
+.listamagias tr {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
